@@ -20,7 +20,6 @@ wandb
 jupyter
 python-dotenv
 pypdf
-fitz
 pymupdf
 faiss-cpu
 sentence-transformers
