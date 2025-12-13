@@ -1,37 +1,48 @@
+# Standard Library
+import asyncio
+import builtins
+import contextlib
+import hashlib
+import io
+import json
 import os
 import re
-import time
+import shutil
+import textwrap
 import threading
+import time
+import warnings
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from unittest import result
-from utils import read_paper_content, extract_images, summarize_csv, convert_pngs_to_pdfs, clear_non_folder_items
-import contextlib
-import io
-import textwrap
+import geopandas
+import cartopy
+
+# Third-Party Libraries
 import matplotlib
 import matplotlib.pyplot as plt
-import builtins
-import shutil
-import warnings
-import json
 from PIL import Image
-
 import openai
-from agents import Agent,Runner
-import asyncio
 
-# TODO: Add format checker agent
-# TODO: Allow use to add how ever many figures as they want
-# TODO: Create MVP for tables
+# Local/Project Imports
+from agents import Agent, Runner
+from utils import (
+    read_paper_content,
+    extract_images,
+    summarize_csv,
+    convert_pngs_to_pdfs,
+    clear_non_folder_items
+)
+
 
 # -------------------------------------------
 # CONFIG
 # -------------------------------------------
 DATA_DIR = Path("resources")
-PAPER_ANALYZER_INPUT = DATA_DIR / "input/The_impact_of_exposure_to_air_pollution_on_cognitive_performance_PNAS.pdf"
+PAPER_ANALYZER_INPUT = DATA_DIR / "input/francis-et-al-2022-black-land-loss-1920-1997.pdf"
 PAPER_ANALYZER_OUTPUT = DATA_DIR / "output/analyzed_paper.txt"
 
-CODE_IMPLEMENTER_DATA = DATA_DIR / "input/data/data_for_reproduce.csv"
+CODE_IMPLEMENTER_DATA = DATA_DIR / "input/data/all_years_combined.csv"
 CODE_IMPLEMENTER_OUTPUT = DATA_DIR / "output/extracted_code.py"
 
 CODE_IMPLEMENTER_GRAPH_PDF = DATA_DIR / "input/graphs"
@@ -43,6 +54,8 @@ EXTRACTED_FIGURES_PNG = DATA_DIR / "output/figures"
 RESULT_VALIDATOR_OUTPUT = DATA_DIR / "output/validation_results.json"
 
 FIGURES_ARE_GIVEN = True # Set to False if you want to find all figures (if false will delete existing ones)
+
+REPLICATION = False # If true, will try to exactly replicate figures (use new data)
 
 MODEL = "gpt-4o" # Default Model
 
@@ -150,111 +163,30 @@ def run_paper_analyzer():
     return True
 
 
-'''
-async def run_figure_describer(max_retries=3):
+async def run_code_implementor(max_retries=10):
     global total_prompt_tokens, total_completion_tokens, total_tokens_used, token_cost
 
-    # === Upload PDF ===
-    print("📄 Uploading PDF...")
-    file = client.files.create(
-        file=open(PAPER_ANALYZER_INPUT, "rb"),
-        purpose="assistants"
-    )
-
-    # === Create assistant agent ===
-    describing_agent = Agent(
-        name="FigureDescriber",
-        instructions="You are an expert research assistant that identifies and describes figures in academic PDFs.",
-        model=PAPER_ANALYZER_MODEL,
-    )
-
-    # === User prompt ===
-    messages = [
-        {
-            "role": "user",
-            "content": [
-                {"type": "input_file", "file_id": file.id},
-                {
-                    "type": "input_text",
-                    "text": (
-                        "Read the uploaded research paper and locate each figure.\n"
-                        "For each figure, provide a concise description of what it visually shows — "
-                        "including the type of plot, trends, variables, or comparisons depicted.\n\n"
-                        "Output only one description per line, in order of appearance.\n"
-                        "Do not include captions or any extra commentary — just the pure descriptions."
-                    ),
-                },
-            ],
-        },
-    ]
-
-    # === Retry loop ===
-    for attempt in range(1, max_retries + 1):
-        print(f"\n🔁 Attempt {attempt} of {max_retries}")
-
-        try:
-            result = await Runner.run(starting_agent=describing_agent, input=messages)
-            response_text = str(result)
-
-            # === Token accounting ===
-            if hasattr(result, "raw_responses") and result.raw_responses:
-                resp = result.raw_responses[0]
-                if hasattr(resp, "usage") and resp.usage:
-                    usage = resp.usage
-                    total_prompt_tokens += usage.input_tokens
-                    total_completion_tokens += usage.output_tokens
-                    total_tokens_used += usage.total_tokens
-                    token_cost += (
-                        (usage.input_tokens * input_cost)
-                        + (usage.output_tokens * output_cost)
-                    )
-
-            # === Clean and save descriptions ===
-            clean_text = textwrap.dedent(response_text).strip()
-            clean_text = re.sub(r"```.*?```", "", clean_text, flags=re.DOTALL).strip()
-
-            with open(PAPER_ANALYZER_OUTPUT, "w") as f:
-                f.write(clean_text)
-
-            print(f"\n✅ Figure descriptions written to {PAPER_ANALYZER_OUTPUT}")
-            print(f"💰 Tokens used: {total_tokens_used} | Cost: ${token_cost:.4f}")
-            print("\n=== OUTPUT ===\n")
-            print(clean_text)
-            return True
-
-        except Exception as e:
-            print(f"❌ Error on attempt {attempt}: {e}")
-            if attempt < max_retries:
-                messages.append({
-                    "role": "user",
-                    "content": f"The last request failed with this error:\n{e}\nPlease retry extracting figure descriptions."
-                })
-                await asyncio.sleep(2)
-            else:
-                print("🚫 Maximum retries reached.")
-                return False
-'''
-
-'''
-async def run_code_implementor(max_retries=3):
-    global total_prompt_tokens, total_completion_tokens, total_tokens_used, token_cost
-
+    # Gather extracted figure files (assumed to be in EXTRACTED_FIGURES_PDF)
     figure_files = sorted(EXTRACTED_FIGURES_PDF.glob("*.*"))
     if not figure_files:
-        print("⚠️ No figure files found in resources/output/figures.")
+        print("⚠️ No figure files found in resources/input/figures.")
         return False
 
-    # Ensure graph directory exists but do NOT create subfolders
-    if CODE_IMPLEMENTER_GRAPH_PNG.exists():
-        shutil.rmtree(CODE_IMPLEMENTER_GRAPH_PNG)
-    os.makedirs(CODE_IMPLEMENTER_GRAPH_PNG, exist_ok=True)
+    # Ensure graph directories exist but do NOT create subfolders.
+    # Clean and recreate both PDF (input) and PNG (output) directories.
+    for d in (CODE_IMPLEMENTER_GRAPH_PDF, CODE_IMPLEMENTER_GRAPH_PNG):
+        if d.exists():
+            shutil.rmtree(d)
+        os.makedirs(d, exist_ok=True)
 
     # Upload study for global context
-    study_file = client.files.create(
-        file=open(PAPER_ANALYZER_INPUT, "rb"),
-        purpose="assistants"
-    )
+    with open(PAPER_ANALYZER_INPUT, "rb") as study_f:
+        study_file = client.files.create(
+            file=study_f,
+            purpose="assistants"
+        )
 
+    # === Coding agent (unchanged) ===
     coding_agent = Agent(
         name="ResearchAssistant",
         instructions=(
@@ -266,24 +198,41 @@ async def run_code_implementor(max_retries=3):
         model=CODE_IMPLEMENTER_MODEL,
     )
 
-    all_successful = True  # track overall success
+    # === NEW: Formatting check agent ===
+    format_checker_agent = Agent(
+        name="FormatChecker",
+        instructions=(
+            "You compare two graphs (original and reproduced). "
+            "Evaluate ONLY formatting similarity: axes, titles, labels, legends, colors, layout. "
+            "Respond EXACTLY with either 'PASS' or 'FAIL'. "
+            "If FAIL, also provide a short explanation of what is wrong."
+        ),
+        model=CODE_IMPLEMENTER_MODEL,
+    )
 
-    # === Loop through each extracted figure ===
+    all_successful = True
+
+        # === Loop through each figure ===
     for fig_path in figure_files:
         print(f"\n===== Processing figure: {fig_path.name} =====")
+        
+        original_pdf_path = EXTRACTED_FIGURES_PDF / f"{fig_path.stem}.pdf"
 
+        # Upload the original PDF to the LLM
         try:
-            fig_file = client.files.create(
-                file=open(fig_path, "rb"),
-                purpose="assistants"
-            )
+            with open(original_pdf_path, "rb") as f:
+                fig_file = client.files.create(
+                    file=f,
+                    purpose="assistants"
+                )
         except Exception as e:
-            print(f"❌ Failed to upload {fig_path.name}: {e}")
+            print(f"❌ Failed to upload original PDF for {fig_path.name}: {e}")
             all_successful = False
             continue
 
+        # === Base message that never changes ===
         with open(CODE_IMPLEMENTER_DATA, "r", newline="") as infile:
-            messages = [
+            base_messages = [
                 {
                     "role": "user",
                     "content": [
@@ -292,44 +241,57 @@ async def run_code_implementor(max_retries=3):
                         {
                             "type": "input_text",
                             "text": (
-                                f"This figure is from the study you have access to. "
-                                f"Please generate Python code that replicates this figure "
-                                f"as accurately as possible. Use the following data  "
-                                f"from the path {CODE_IMPLEMENTER_DATA} as your dataset context.\n"
-                                f"Here is a summary of the data's structure: {summarize_csv(CODE_IMPLEMENTER_DATA)}"
+                                f"This figure is from the study. "
+                                f"Generate Python code that replicates the figure. "
+                                f"Match formatting and style of the given figure while using the dataset at {CODE_IMPLEMENTER_DATA}.\n"
+                                f"Data summary: {summarize_csv(CODE_IMPLEMENTER_DATA)}"
                             ),
                         },
                     ],
                 },
             ]
 
-        success_for_figure = False  # track per-figure success
+        # state carried between attempts
+        last_feedback = None
+        previous_code = None
+        success_for_figure = False
 
+        # === Attempt Loop ===
         for attempt in range(1, max_retries + 1):
             print(f"\n🔁 Attempt {attempt} of {max_retries} for {fig_path.name}")
 
+            # Rebuild messages fresh each attempt
+            messages = list(base_messages)
+
+            # Include previous generated code as context if it exists
+            if previous_code:
+                messages.append({
+                    "role": "user",
+                    "content": (
+                        "Here is the code you previously generated. "
+                        "Improve it rather than starting from scratch:\n\n"
+                        f"```python\n{previous_code}\n```"
+                    )
+                })
+
+            # Include only MOST RECENT feedback
+            if last_feedback:
+                messages.append({
+                    "role": "user",
+                    "content": last_feedback
+                })
+
+            # === Run the coding agent ===
             result = await Runner.run(starting_agent=coding_agent, input=messages)
 
-            # === Track token usage ===
-            tokens_used = 0
-            if hasattr(result, "raw_responses") and result.raw_responses:
-                resp = result.raw_responses[0]
-                if hasattr(resp, "usage") and resp.usage:
-                    usage = resp.usage
-                    tokens_used = usage.total_tokens
-                    total_prompt_tokens += usage.input_tokens
-                    total_completion_tokens += usage.output_tokens
-                    total_tokens_used += usage.total_tokens
-                    token_cost += (
-                        (usage.input_tokens * input_cost) +
-                        (usage.output_tokens * output_cost)
-                    )
-
-            # === Extract and save code ===
+            # Extract code blocks
             code_blocks = re.findall(r"```python(.*?)```", str(result), re.DOTALL)
             combined_code = "\n\n".join(textwrap.dedent(block).strip() for block in code_blocks)
-            fig_code_output = Path(CODE_IMPLEMENTER_OUTPUT).with_name(f"{fig_path.stem}_code.py")
 
+            # Save code for this attempt (used in next attempt)
+            previous_code = combined_code
+
+            fig_code_output = Path(CODE_IMPLEMENTER_OUTPUT).with_name(f"{fig_path.stem}_code.py")
             with open(fig_code_output, "w") as f:
                 f.write(combined_code)
 
@@ -340,49 +302,84 @@ async def run_code_implementor(max_retries=3):
                 warnings.filterwarnings("ignore", message=".*FigureCanvasAgg is non-interactive.*")
                 builtins.plt = plt
 
-                # Create a single image (no folders)
-                fig_save_path = Path(CODE_IMPLEMENTER_GRAPH_PNG) / f"{fig_path.stem}_replica.png"
+                replica_png_path = Path(CODE_IMPLEMENTER_GRAPH_PNG) / f"{fig_path.stem}_replica.png"
+                replica_pdf_path = Path(CODE_IMPLEMENTER_GRAPH_PDF) / f"{fig_path.stem}_replica.pdf"
 
-                # Run code in isolated namespace and capture figures
+                # Execute the code
                 with contextlib.redirect_stdout(io.StringIO()) as output:
                     exec_namespace = {"plt": plt}
                     exec(combined_code, exec_namespace)
 
                 figs = plt.get_fignums()
                 if figs:
-                    # Always overwrite the previous saved figure
-                    for i, num in enumerate(figs, 1):
-                        fig = plt.figure(num)
-                        fig.savefig(fig_save_path, bbox_inches="tight")
-                        print(f"📊 Saved (and replaced if existed): {fig_save_path}")
+                    if len(figs) == 1:
+                        fig = plt.figure(figs[0])
+                        fig.savefig(replica_png_path, bbox_inches="tight")
+                        fig.savefig(replica_pdf_path, bbox_inches="tight", format="pdf")
+                        plt.close(fig)
+                    else:
+                        for num in figs:
+                            fig = plt.figure(num)
+                            fig.savefig(replica_png_path, bbox_inches="tight")
+                            fig.savefig(replica_pdf_path, bbox_inches="tight", format="pdf")
+                            plt.close(fig)
                     plt.close("all")
                 else:
-                    print("⚠️ No figures were generated by the code.")
+                    raise RuntimeError("No figure produced")
 
-                print(output.getvalue())
-                print(f"\n✅ Successfully replicated {fig_path.name} with {tokens_used} tokens\n")
-                success_for_figure = True
-                break
+                print(f"📊 Saved replica PNG/PDF in {CODE_IMPLEMENTER_GRAPH_PNG} and {CODE_IMPLEMENTER_GRAPH_PDF}")
+
+                # Upload replica for format checking
+                with open(replica_pdf_path, "rb") as rf:
+                    replica_uploaded = client.files.create(
+                        file=rf,
+                        purpose="assistants"
+                    )
+
+                # Run format checker
+                check_messages = [
+                    {
+                        "role": "user",
+                        "content": [
+                            {"type": "input_file", "file_id": fig_file.id},
+                            {"type": "input_file", "file_id": replica_uploaded.id},
+                            {"type": "input_text",
+                             "text": "Compare these two graphs to see if the general formatting (axes, labels, ticks) matches. Also, make sure data points and trends are visible. Respond PASS or FAIL."}
+                        ]
+                    }
+                ]
+                check_result = await Runner.run(starting_agent=format_checker_agent, input=check_messages)
+
+                check_text = str(check_result).strip()
+                print(f"🔍 Format Check Result: {check_text}")
+
+                if "PASS" in check_text.upper():
+                    print(f"\n✅ Formatting accepted for {fig_path.name}\n")
+                    success_for_figure = True
+                    break
+
+                # FAIL → set *only latest* feedback
+                last_feedback = (
+                    "The formatting does not match the original figure.\n"
+                    f"Evaluator feedback:\n{check_text}\n"
+                    "Please fix the formatting."
+                )
 
             except Exception as e:
                 print(f"❌ Error running code for {fig_path.name} on attempt {attempt}: {e}")
-                if attempt < max_retries:
-                    messages.append({
-                        "role": "user",
-                        "content": f"The code failed with this error:\n{e}\n\n"
-                                   "Please fix the code and try again."
-                    })
-                    print("🧠 Sending error back to agent for correction...")
-                    await asyncio.sleep(2)
-                else:
-                    print(f"🚫 Maximum retries reached for {fig_path.name}. Moving on.\n")
+
+                # Crash feedback (only latest)
+                last_feedback = (
+                    f"The code crashed with error:\n{e}\n"
+                    "Fix the error and try again."
+                )
 
         if not success_for_figure:
-            all_successful = False  # mark overall failure if one figure fails
+            print(f"🚫 Failed to reproduce {fig_path.name} after {max_retries} attempts.")
+            all_successful = False
 
     return all_successful
-'''
-    
+
 
 async def run_result_validator():
     global total_prompt_tokens, total_completion_tokens, total_tokens_used, token_cost
@@ -513,457 +510,7 @@ async def run_result_validator():
     print(f"\n📊 All validation results saved to {RESULT_VALIDATOR_OUTPUT}\n")
     return True
 
-
-'''
-async def run_code_implementor(max_retries=5):
-    global total_prompt_tokens, total_completion_tokens, total_tokens_used, token_cost
-
-    figure_files = sorted(EXTRACTED_FIGURES_PDF.glob("*.*"))
-    if not figure_files:
-        print("⚠️ No figure files found in resources/output/figures.")
-        return False
-
-    # Ensure graph directory exists but do NOT create subfolders
-    if CODE_IMPLEMENTER_GRAPH_PNG.exists():
-        shutil.rmtree(CODE_IMPLEMENTER_GRAPH_PNG)
-    os.makedirs(CODE_IMPLEMENTER_GRAPH_PNG, exist_ok=True)
-
-    # Upload study for global context
-    study_file = client.files.create(
-        file=open(PAPER_ANALYZER_INPUT, "rb"),
-        purpose="assistants"
-    )
-
-    # === Coding agent (unchanged) ===
-    coding_agent = Agent(
-        name="ResearchAssistant",
-        instructions=(
-            "You are a helpful research assistant specializing in creating Python code "
-            "to replicate figures from research studies. You have access to the full study "
-            "as context. For each uploaded figure, write clean and reproducible Python code "
-            "that recreates the figure as closely as possible using matplotlib and pandas."
-        ),
-        model=CODE_IMPLEMENTER_MODEL,
-    )
-
-    # === NEW: Formatting check agent ===
-    format_checker_agent = Agent(
-        name="FormatChecker",
-        instructions=(
-            "You compare two graphs (original and reproduced). "
-            "Evaluate ONLY formatting similarity: axes, titles, labels, legends, colors, layout. "
-            "Respond EXACTLY with either 'PASS' or 'FAIL'. "
-            "If FAIL, also provide a short explanation of what is wrong."
-        ),
-        model=CODE_IMPLEMENTER_MODEL,
-    )
-
-    all_successful = True
-
-    # === Loop through each figure ===
-    for fig_path in figure_files:
-        print(f"\n===== Processing figure: {fig_path.name} =====")
-
-        try:
-            fig_file = client.files.create(
-                file=open(fig_path, "rb"),
-                purpose="assistants"
-            )
-        except Exception as e:
-            print(f"❌ Failed to upload {fig_path.name}: {e}")
-            all_successful = False
-            continue
-
-        with open(CODE_IMPLEMENTER_DATA, "r", newline="") as infile:
-            messages = [
-                {
-                    "role": "user",
-                    "content": [
-                        {"type": "input_file", "file_id": study_file.id},
-                        {"type": "input_file", "file_id": fig_file.id},
-                        {
-                            "type": "input_text",
-                            "text": (
-                                f"This figure is from the study. "
-                                f"Please generate Python code that replicates the figure "
-                                f"as accurately as possible using the dataset at {CODE_IMPLEMENTER_DATA}.\n"
-                                f"Data summary: {summarize_csv(CODE_IMPLEMENTER_DATA)}"
-                            ),
-                        },
-                    ],
-                },
-            ]
-
-        success_for_figure = False
-
-        for attempt in range(1, max_retries + 1):
-            print(f"\n🔁 Attempt {attempt} of {max_retries} for {fig_path.name}")
-
-            # === Run the coding agent ===
-            result = await Runner.run(starting_agent=coding_agent, input=messages)
-
-            # Track tokens
-            tokens_used = 0
-            if hasattr(result, "raw_responses") and result.raw_responses:
-                resp = result.raw_responses[0]
-                if hasattr(resp, "usage") and resp.usage:
-                    usage = resp.usage
-                    tokens_used = usage.total_tokens
-                    total_prompt_tokens += usage.input_tokens
-                    total_completion_tokens += usage.output_tokens
-                    total_tokens_used += usage.total_tokens
-                    token_cost += (
-                        (usage.input_tokens * input_cost) +
-                        (usage.output_tokens * output_cost)
-                    )
-
-            # Extract code
-            code_blocks = re.findall(r"```python(.*?)```", str(result), re.DOTALL)
-            combined_code = "\n\n".join(textwrap.dedent(block).strip() for block in code_blocks)
-            fig_code_output = Path(CODE_IMPLEMENTER_OUTPUT).with_name(f"{fig_path.stem}_code.py")
-
-            with open(fig_code_output, "w") as f:
-                f.write(combined_code)
-
-            print(f"\n===== Running Extracted Code for {fig_path.name} =====\n")
-
-            try:
-                matplotlib.use("Agg")
-                warnings.filterwarnings("ignore", message=".*FigureCanvasAgg is non-interactive.*")
-                builtins.plt = plt
-
-                # Save path for reproduced figure
-                fig_save_path = Path(CODE_IMPLEMENTER_GRAPH_PNG) / f"{fig_path.stem}_replica.png"
-
-                # Execute figure-producing code
-                with contextlib.redirect_stdout(io.StringIO()) as output:
-                    exec_namespace = {"plt": plt}
-                    exec(combined_code, exec_namespace)
-
-                figs = plt.get_fignums()
-                if figs:
-                    for num in figs:
-                        fig = plt.figure(num)
-                        fig.savefig(fig_save_path, bbox_inches="tight")
-                    plt.close("all")
-                else:
-                    print("⚠️ No figures were generated.")
-                    raise RuntimeError("No figure produced")
-
-                print(f"📊 Saved: {fig_save_path}")
-
-                # === NEW: LLM Format Validation Step ===
-                original_uploaded = client.files.create(
-                    file=open(fig_path, "rb"),
-                    purpose="assistants"
-                )
-
-                replica_uploaded = client.files.create(
-                    file=open(fig_save_path, "rb"),
-                    purpose="assistants"
-                )
-
-                check_messages = [
-                    {
-                        "role": "user",
-                        "content": [
-                            {"type": "input_file", "file_id": original_uploaded.id},
-                            {"type": "input_file", "file_id": replica_uploaded.id},
-                            {"type": "input_text", 
-                             "text": (
-                                 "Compare these two graphs. "
-                                 "Respond with PASS if the formatting matches closely. "
-                                 "Respond with FAIL otherwise."
-                             )}
-                        ]
-                    }
-                ]
-
-                check_result = await Runner.run(
-                    starting_agent=format_checker_agent,
-                    input=check_messages
-                )
-
-                check_text = str(check_result).strip()
-                print(f"🔍 Format Check Result: {check_text}")
-
-                if "PASS" in check_text.upper():
-                    print(f"\n✅ Formatting accepted for {fig_path.name}\n")
-                    success_for_figure = True
-                    break
-
-                # === If FAIL: send feedback and retry ===
-                else:
-                    print(f"❌ Format mismatch on attempt {attempt}")
-                    messages.append({
-                        "role": "user",
-                        "content": (
-                            "The formatting does not match the original figure. "
-                            f"Here is the evaluator's response:\n{check_text}\n\n"
-                            "Please fix the formatting and try again."
-                        )
-                    })
-
-            except Exception as e:
-                print(f"❌ Error running code for {fig_path.name} on attempt {attempt}: {e}")
-                messages.append({
-                    "role": "user",
-                    "content": f"The code crashed with error:\n{e}\nFix it and retry."
-                })
-
-        if not success_for_figure:
-            print(f"🚫 Failed to reproduce {fig_path.name} after {max_retries} attempts.")
-            all_successful = False
-
-    return all_successful
-'''
-
-async def run_code_implementor(max_retries=5):
-    global total_prompt_tokens, total_completion_tokens, total_tokens_used, token_cost
-
-    # Gather extracted figure files (assumed to be in EXTRACTED_FIGURES_PDF)
-    figure_files = sorted(EXTRACTED_FIGURES_PDF.glob("*.*"))
-    if not figure_files:
-        print("⚠️ No figure files found in resources/output/figures.")
-        return False
-
-    # Ensure graph directories exist but do NOT create subfolders.
-    # Clean and recreate both PDF (input) and PNG (output) directories.
-    for d in (CODE_IMPLEMENTER_GRAPH_PDF, CODE_IMPLEMENTER_GRAPH_PNG):
-        if d.exists():
-            shutil.rmtree(d)
-        os.makedirs(d, exist_ok=True)
-
-    # Upload study for global context
-    with open(PAPER_ANALYZER_INPUT, "rb") as study_f:
-        study_file = client.files.create(
-            file=study_f,
-            purpose="assistants"
-        )
-
-    # === Coding agent (unchanged) ===
-    coding_agent = Agent(
-        name="ResearchAssistant",
-        instructions=(
-            "You are a helpful research assistant specializing in creating Python code "
-            "to replicate figures from research studies. You have access to the full study "
-            "as context. For each uploaded figure, write clean and reproducible Python code "
-            "that recreates the figure as closely as possible using matplotlib and pandas."
-        ),
-        model=CODE_IMPLEMENTER_MODEL,
-    )
-
-    # === NEW: Formatting check agent ===
-    format_checker_agent = Agent(
-        name="FormatChecker",
-        instructions=(
-            "You compare two graphs (original and reproduced). "
-            "Evaluate ONLY formatting similarity: axes, titles, labels, legends, colors, layout. "
-            "Respond EXACTLY with either 'PASS' or 'FAIL'. "
-            "If FAIL, also provide a short explanation of what is wrong."
-        ),
-        model=CODE_IMPLEMENTER_MODEL,
-    )
-
-    all_successful = True
-
-    # === Loop through each figure ===
-    for fig_path in figure_files:
-        print(f"\n===== Processing figure: {fig_path.name} =====")
-
-        # --- Ensure we upload an original PDF to the LLM ---
-        # If original is already PDF, copy it into CODE_IMPLEMENTER_GRAPH_PDF for record and upload that.
-        if fig_path.suffix.lower() == ".pdf":
-            original_pdf_path = CODE_IMPLEMENTER_GRAPH_PDF / fig_path.name
-            shutil.copy2(fig_path, original_pdf_path)
-        else:
-            # Convert image (png/jpg/etc.) to PDF and place in input/graphs
-            original_pdf_path = CODE_IMPLEMENTER_GRAPH_PDF / f"{fig_path.stem}.pdf"
-            try:
-                with Image.open(fig_path) as im:
-                    # Convert to RGB for multi-mode formats
-                    im_rgb = im.convert("RGB")
-                    im_rgb.save(original_pdf_path, "PDF", resolution=300.0)
-            except Exception as e:
-                print(f"❌ Failed to convert original {fig_path.name} to PDF: {e}")
-                all_successful = False
-                continue
-
-        # Upload the original PDF to the LLM
-        try:
-            with open(original_pdf_path, "rb") as f:
-                fig_file = client.files.create(
-                    file=f,
-                    purpose="assistants"
-                )
-        except Exception as e:
-            print(f"❌ Failed to upload original PDF for {fig_path.name}: {e}")
-            all_successful = False
-            continue
-
-        # Prepare messages (study_file and fig_file provided as input files)
-        with open(CODE_IMPLEMENTER_DATA, "r", newline="") as infile:
-            messages = [
-                {
-                    "role": "user",
-                    "content": [
-                        {"type": "input_file", "file_id": study_file.id},
-                        {"type": "input_file", "file_id": fig_file.id},
-                        {
-                            "type": "input_text",
-                            "text": (
-                                f"This figure is from the study. "
-                                f"Please generate Python code that replicates the figure "
-                                f"as accurately as possible using the dataset at {CODE_IMPLEMENTER_DATA}.\n"
-                                f"Data summary: {summarize_csv(CODE_IMPLEMENTER_DATA)}"
-                            ),
-                        },
-                    ],
-                },
-            ]
-
-        success_for_figure = False
-
-        for attempt in range(1, max_retries + 1):
-            print(f"\n🔁 Attempt {attempt} of {max_retries} for {fig_path.name}")
-
-            # === Run the coding agent ===
-            result = await Runner.run(starting_agent=coding_agent, input=messages)
-
-            # Track tokens (if the response includes usage info)
-            tokens_used = 0
-            if hasattr(result, "raw_responses") and result.raw_responses:
-                resp = result.raw_responses[0]
-                if hasattr(resp, "usage") and resp.usage:
-                    usage = resp.usage
-                    tokens_used = usage.total_tokens
-                    total_prompt_tokens += usage.input_tokens
-                    total_completion_tokens += usage.output_tokens
-                    total_tokens_used += usage.total_tokens
-                    token_cost += (
-                        (usage.input_tokens * input_cost) +
-                        (usage.output_tokens * output_cost)
-                    )
-
-            # Extract code blocks from the agent output
-            code_blocks = re.findall(r"```python(.*?)```", str(result), re.DOTALL)
-            combined_code = "\n\n".join(textwrap.dedent(block).strip() for block in code_blocks)
-            fig_code_output = Path(CODE_IMPLEMENTER_OUTPUT).with_name(f"{fig_path.stem}_code.py")
-
-            with open(fig_code_output, "w") as f:
-                f.write(combined_code)
-
-            print(f"\n===== Running Extracted Code for {fig_path.name} =====\n")
-
-            try:
-                matplotlib.use("Agg")
-                warnings.filterwarnings("ignore", message=".*FigureCanvasAgg is non-interactive.*")
-                builtins.plt = plt
-
-                # Ensure the output PNG directory exists (already created above)
-                # We'll save both PNG and PDF replicas into the corresponding directories
-                replica_png_path = Path(CODE_IMPLEMENTER_GRAPH_PNG) / f"{fig_path.stem}.png"
-                replica_pdf_path = Path(CODE_IMPLEMENTER_GRAPH_PDF) / f"{fig_path.stem}.pdf"
-
-                # Execute figure-producing code (provide plt in namespace)
-                with contextlib.redirect_stdout(io.StringIO()) as output:
-                    exec_namespace = {"plt": plt}
-                    exec(combined_code, exec_namespace)
-
-                figs = plt.get_fignums()
-                if figs:
-                    # Save each open figure; if multiple figs, append index to filename
-                    if len(figs) == 1:
-                        # Save single figure as PNG and PDF
-                        fig = plt.figure(figs[0])
-                        fig.savefig(replica_png_path, bbox_inches="tight")
-                        fig.savefig(replica_pdf_path, bbox_inches="tight", format="pdf")
-                        plt.close(fig)
-                    else:
-                        for idx, num in enumerate(figs, start=1):
-                            fig = plt.figure(num)
-                            png_path = Path(CODE_IMPLEMENTER_GRAPH_PNG) / f"{fig_path.stem}_{idx}.png"
-                            pdf_path = Path(CODE_IMPLEMENTER_GRAPH_PDF) / f"{fig_path.stem}_{idx}.pdf"
-                            fig.savefig(png_path, bbox_inches="tight")
-                            fig.savefig(pdf_path, bbox_inches="tight", format="pdf")
-                            plt.close(fig)
-                    plt.close("all")
-                else:
-                    print("⚠️ No figures were generated.")
-                    raise RuntimeError("No figure produced")
-
-                print(f"📊 Saved replica PNG(s) in {CODE_IMPLEMENTER_GRAPH_PNG} and PDF(s) in {CODE_IMPLEMENTER_GRAPH_PDF}")
-
-                # === NEW: LLM Format Validation Step ===
-                # Upload original (already uploaded above as fig_file) and replica PDF(s).
-                # For simplicity, upload the primary replica PDF for the checker.
-                try:
-                    with open(replica_pdf_path, "rb") as rf:
-                        replica_uploaded = client.files.create(
-                            file=rf,
-                            purpose="assistants"
-                        )
-                except Exception as e:
-                    print(f"❌ Failed to upload replica PDF for {fig_path.name}: {e}")
-                    messages.append({
-                        "role": "user",
-                        "content": f"Failed to upload replica PDF: {e}\nFix it and retry."
-                    })
-                    continue
-
-                check_messages = [
-                    {
-                        "role": "user",
-                        "content": [
-                            {"type": "input_file", "file_id": fig_file.id},        # original PDF
-                            {"type": "input_file", "file_id": replica_uploaded.id}, # replica PDF
-                            {"type": "input_text",
-                             "text": (
-                                 "Compare these two graphs. "
-                                 "Respond with PASS if the formatting matches closely. "
-                                 "Respond with FAIL otherwise."
-                             )}
-                        ]
-                    }
-                ]
-
-                check_result = await Runner.run(
-                    starting_agent=format_checker_agent,
-                    input=check_messages
-                )
-
-                check_text = str(check_result).strip()
-                #print(f"🔍 Format Check Result: {check_text}")
-
-                if "PASS" in check_text.upper():
-                    print(f"\n✅ Formatting accepted for {fig_path.name}\n")
-                    success_for_figure = True
-                    break
-
-                # === If FAIL: send feedback and retry ===
-                else:
-                    print(f"❌ Format mismatch on attempt {attempt}")
-                    messages.append({
-                        "role": "user",
-                        "content": (
-                            "The formatting does not match the original figure. "
-                            f"Here is the evaluator's response:\n{check_text}\n\n"
-                            "Please fix the formatting and try again."
-                        )
-                    })
-
-            except Exception as e:
-                print(f"❌ Error running code for {fig_path.name} on attempt {attempt}: {e}")
-                messages.append({
-                    "role": "user",
-                    "content": f"The code crashed with error:\n{e}\nFix it and retry."
-                })
-
-        if not success_for_figure:
-            print(f"🚫 Failed to reproduce {fig_path.name} after {max_retries} attempts.")
-            all_successful = False
-
-    return all_successful
+    
 
 def run_full_agent_flow():
     print("\n" + "="*100)

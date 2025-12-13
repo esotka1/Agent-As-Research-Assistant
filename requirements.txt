@@ -25,3 +25,5 @@ faiss-cpu
 sentence-transformers
 linearmodels
 statsmodels
+geopandas
+cartopy
