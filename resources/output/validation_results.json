@@ -1,0 +1,12 @@
+{
+  "Screenshot 2025-12-11 at 10.49.33\u202fAM.pdf": {
+    "same_data": false,
+    "explanation": "The first chart shows a decreasing trend in black-owned land over time from around 15 million acres in 1910 to below 5 million by 2012, with variations across different part-ownership categories. The second chart depicts a static or slightly increasing trend, with values remaining consistently around 0 to 2 million acres post-1970, indicating different data trends and scales.",
+    "tokens_used": 428
+  },
+  "Screenshot 2025-12-11 at 10.49.38\u202fAM.pdf": {
+    "same_data": false,
+    "explanation": "The first image shows a continuous trend from 1920 to 2002 with distinct data points for each category, whereas the second image shows all data points around 1960, lacking any visible trend over time or differentiation between the time periods.",
+    "tokens_used": 400
+  }
+}

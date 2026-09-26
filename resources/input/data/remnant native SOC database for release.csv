@@ -1,0 +1,548 @@
+﻿Source No.,Pair ID,Site ID,Location description,State, Country,Latitude,Longitude,Location accuracy,Land use descriptive,LULC category,Native/Ag/Restored,Time since LUC (yr),max depth(m),10 cm SOC,30 cm SOC,100 cm SOC,other SOC,other depth (m)
+47,ABC1,ABC1A,Juquila,Oaxaca, Mexico,17.34390,-96.29340,Exact estimated,Corn ,cropping,Agriculture,4,0.40,16.3,38.2,,,
+47,ABC1,ABC1N,Juquila,Oaxaca, Mexico,17.33060,-96.28800,Exact estimated,tropical montane cloud forest,forest,Native,,0.40,74.5,173.7,,,
+47,ABC2,ABC2A,Tanetze,Oaxaca, Mexico,17.36040,-96.26820,Exact estimated,Corn ,cropping,Agriculture,4,0.40,42.3,106.2,,,
+47,ABC2,ABC2N,Tanetze,Oaxaca, Mexico,17.36470,-96.27520,Exact estimated,tropical montane cloud forest,forest,Native,,0.40,46.8,109.7,,,
+47,ABC3,ABC3A,Yotao,Oaxaca, Mexico,17.34060,-96.34060,Exact estimated,Corn ,cropping,Agriculture,4,0.40,34.5,78.0,,,
+47,ABC3,ABC3N,Yotao,Oaxaca, Mexico,17.36570,-96.35800,Exact estimated,tropical montane cloud forest,forest,Native,,0.40,39.6,99.0,,,
+43,AKF1,AKF1aA,"Aglomerados Cotopaxi, S.A.,",Cotopaxi Province, Ecuador,-0.66667,-78.50000,Approximate (to the min),Pine,plantation,Agriculture,,0.10,37.0,,,,
+43,AKf1,AKF1bA,"Aglomerados Cotopaxi, S.A.,",Cotopaxi Province, Ecuador,-0.66667,-78.50000,Approximate (to the min),Pine,plantation,Agriculture,15-20,0.10,35.0,,,,
+43,AkF1,AKF1cA,"Aglomerados Cotopaxi, S.A.,",Cotopaxi Province, Ecuador,-0.66667,-78.50000,Approximate (to the min),Pine,plantation,Agriculture,20-25,0.10,27.0,,,,
+43,AKF1,AKF1N,"Aglomerados Cotopaxi, S.A.,",Cotopaxi Province, Ecuador,-0.66667,-78.50000,Approximate (to the min),Grassland,grassland,Native,,0.10,50.0,,,,
+48,AOA1,AOA1aA,Shagamu-Ijebu-Ode,Ògùn, Nigeria,7.115625,3.841794,estimated,Fallow,cropping,Agriculture,1,0.30,29.6,59.2,,,
+48,AOA1,AOA1bA,Shagamu-Ijebu-Ode,Ògùn, Nigeria,7.115625,3.841794,estimated,Fallow,cropping,Agriculture,3,0.30,23.8,53.8,,,
+48,AOA1,AOA1N,Shagamu-Ijebu-Ode,Ògùn, Nigeria,7.134162,3.848497,estimated,Forest,forest,Native,,0.30,52.6,89.2,,,
+48,AOA1,AOA1cA,Shagamu-Ijebu-Ode,Ògùn, Nigeria,7.115625,3.841794,estimated,,forest,Restored,7,0.30,33.2,73.7,,,
+48,AOA1,AOA1dA,Shagamu-Ijebu-Ode,Ògùn, Nigeria,7.115625,3.841794,estimated,Fallow,forest,Restored,10,0.30,41.0,89.1,,,
+25,AOF1,AOF1A,Santa Rosa,Rio Grande do Sul, Brazil,-27.86667,-54.46667,Approximate (to the min),soybean/wheat/soybean/black oat,cropping,Agriculture,20,1.00,18.4,51.7,99.8,,
+25,AOF1,AOF1N,Santa Rosa,Rio Grande do Sul, Brazil,-27.86667,-54.46667,Approximate (to the min),grassy woody,savanna,Native,,1.00,27.9,76.0,164.8,,
+25,AOF2,AOF2A,Manoel Viana,Rio Grande do Sul, Brazil,-29.58333,-55.46667,Approximate (to the min),wheat/soybean/oat + radish/soybean,cropping,Agriculture,23,1.00,11.6,30.0,78.3,,
+25,AOF2,AOF2N,Manoel Viana,Rio Grande do Sul, Brazil,-29.58333,-55.46667,Approximate (to the min),grassy woody,savanna,Native,,1.00,10.0,33.1,91.7,,
+25,AOF3,AOF3A,Palmeira das Missões,Rio Grande do Sul, Brazil,-27.88333,-53.30000,Approximate (to the min),Corn/radish/wheat/soybean/black oat,cropping,Agriculture,33,1.00,21.0,59.2,143.3,,
+25,AOF3,AOF3N,Palmeira das Missões,Rio Grande do Sul, Brazil,-27.88333,-53.30000,Approximate (to the min),grassy woody,savanna,Native,,1.00,19.5,64.7,164.3,,
+25,AOF4,AOF4A,Lagoa Vermelha,Rio Grande do Sul, Brazil,-28.36667,-51.83333,Approximate (to the min),soybean/radish* + oat/corn/wheat,cropping,Agriculture,25,1.00,29.6,90.0,225.4,,
+25,AOF4,AOF4N,Lagoa Vermelha,Rio Grande do Sul, Brazil,-28.36667,-51.83333,Approximate (to the min),grassy woody,savanna,Native,,1.00,31.5,96.2,193.4,,
+25,AOF5,AOF5A,Cruz Alta,Rio Grande do Sul, Brazil,-28.63333,-53.60000,Approximate (to the min),Oats + vetch/soybean/corn/radish/wheat,cropping,Agriculture,25,1.00,27.1,73.0,165.0,,
+25,AOF5,AOF5N,Cruz Alta,Rio Grande do Sul, Brazil,-28.63333,-53.60000,Approximate (to the min),grassy woody,savanna,Native,,1.00,25.3,76.1,167.3,,
+25,AOF6,AOF6A,Fortaleza dos Valos,Rio Grande do Sul, Brazil,-28.78333,-53.21667,Approximate (to the min),wheat/soybean/black oat + radish/corn/radish,cropping,Agriculture,,1.00,20.9,55.9,133.0,,
+25,AOF6,AOF6N,Fortaleza dos Valos,Rio Grande do Sul, Brazil,-28.78333,-53.21667,Approximate (to the min),grassy woody,savanna,Native,,1.00,25.3,76.1,167.3,,
+22,BG1,BG1N,Adami Tulu - Protected woodland,Jido Komolcha District,  Ethiopia,7.85531,38.71362,Exact,Acacia woodlands,savanna,Native,,0.60,27.5,72.5,,108.0,0.60
+22,BG1,BG1PA,Adami Tulu- Managed Pasture,Jido Komolcha District,  Ethiopia,7.86054,38.71688,Exact,Pasture (improved),grazing,Agriculture,20,0.60,21.3,62.0,,94.0,0.60
+22,BG1,BG1aA,Adami Tulu- Parkland agroforestry,Jido Komolcha District,  Ethiopia,7.84041,38.70063,Exact,Maize (agroforestry),cropping,Agriculture,20,0.60,15.2,43.9,,78.2,0.60
+22,BG1,BG1bA,Adami Tulu- Treeless cropland,Jido Komolcha District,  Ethiopia,7.84897,38.70579,Exact,Maize,cropping,Agriculture,20,0.60,13.7,39.8,,70.9,0.60
+16,BL1,BL1A,Adjoining farmland,Oromia, Ethiopia,7.55000,36.58333,Approximate( to the min),Maize,cropping,Agriculture,78,0.50,20.4,67.0,,101.3,0.50
+16,BL1,Bl1N,Belete Forest,Oromia, Ethiopia,7.55000,36.58333,Approximate( to the min),deciduous forest,forest,Native,,0.50,63.0,128.3,,176.7,0.50
+19,BRW1,BRW1A,Basalt Cultivation,New South Wales, Australia,-30.15179,151.60032,,"potatoes, oats, millet, wheat crop rotation",cropping,Agriculture,>15,0.30,33.5,71.6,,,
+19,BRW1,BRW1PA,Basalt Improved Pasture,New South Wales, Australia,-30.15075,151.59950,,"Pasture (Improved: Sown fescue, ryegrass, clover, Phalaris pasture)",grazing,Agriculture,>30,0.30,34.5,73.1,,,
+19,BRW1,BRW1PAb,Basalt Unimproved Pasture,New South Wales, Australia,-30.15137,151.60380,,Pasture (native),grazing,Agriculture,>50,0.30,33.4,62.3,,,
+19,BRW1,BRW1N,Basalt Woodland,New South Wales, Australia,-30.15129,151.60149,,Woodland - lightly grazed,savanna,Native,,0.30,48.1,101.8,,,
+19,BRW2,BRW2A,Granite Cultivation,New South Wales, Australia,,,,"oats, lucerne, wheat",cropping,Agriculture,>15,0.30,18.3,32.6,,,
+19,BRW2,BRW2PA,Granite Improved Pasture,New South Wales, Australia,,,,"Pasture(improved:fescue, ryegrass, clover)",grazing,Agriculture,>30,0.30,20.7,35.2,,,
+19,BRW2,BRW2PAb,Granite Unimproved Pasture,New South Wales, Australia,,,,Pasture(native),grazing,Agriculture,>50,0.30,20.4,35.1,,,
+19,BRW2,BRW2N,Granite Woodland,New South Wales, Australia,,,,Woodland,savanna,Native,,0.30,24.4,45.8,,,
+19,BRW3,BRW3A,Meta- sediments Cultivation,New South Wales, Australia,,,,"lucerne, wheat, forage",cropping,Agriculture,>20,0.30,28.2,70.9,,,
+19,BRW3,BRW3PA,Meta- sediments Improved Pasture,New South Wales, Australia,,,,"Pasture (Improved:Phalaris, ryegrass, Rhodes grass, purple pigeon grass)",grazing,Agriculture,>20,0.30,30.2,73.2,,,
+19,BRW3,BRW3PAb,Meta- sediments Unimproved Pasture,New South Wales, Australia,,,,Pasture( native),grazing,Agriculture,>50,0.30,32.1,78.6,,,
+19,BRW3,BRW3N,Meta- sediments Woodland,New South Wales, Australia,,,,Woodland,savanna,Native,,0.30,48.9,121.5,,,
+42,CCC1,CCC1A,Drake River Valley,Osa Peninsula, Costa Rica,8.71667,-83.61667,Approximate (to the min),Pasture (improved),grazing,Agriculture,20,0.10,37.0,,,,
+42,CCC1,CCC1N,Drake River Valley,Osa Peninsula, Costa Rica,8.71667,-83.61667,Approximate (to the min),Tropical Forest,forest,Native,,0.10,34.0,,,,
+42,CCC2,CCC2A,Drake River Valley,Osa Peninsula, Costa Rica,8.71667,-83.61667,Approximate (to the min),Pasture (improved),grazing,Agriculture,20,0.10,55.0,,,,
+42,CCC2,CCC2N,Drake River Valley,Osa Peninsula, Costa Rica,8.71667,-83.61667,Approximate (to the min),Tropical Forest,forest,Native,,0.10,45.0,,,,
+36,CCJ1,CCJ1N,Rio Verde,Goiás, Brazil,-17.65194,-51.04694,Exact,Cerrado,savanna,Native,,0.20,23.8,,,46.3,0.20
+36,CCJ1,CCJ1A,Rio Verde,Goiás, Brazil,-17.64944,-51.06583,Exact,Pasture (improved),grazing,Agriculture,"20 y of pasture, cultivated 29 years prior",0.20,22.1,,,42.5,0.20
+45,CCR1,CCR1aA,Maquipu- cuna Forest Reserve,Districto Metropolitano de Quito, Ecuador,0.08333,-78.61667,Approximate (to the min),Sugar Cane,cropping,Agriculture,50,1.00,40.3,48.2,236.7,,
+45,CCR1,CCR1bA,Maquipu- cuna Forest Reserve,Districto Metropolitano de Quito, Ecuador,0.08333,-78.61667,Approximate (to the min),Sugar Cane,cropping,Agriculture,50,1.00,42.3,46.5,208.5,,
+45,CCR1,CCR1aPA,Maquipu- cuna Forest Reserve,Districto Metropolitano de Quito, Ecuador,0.08333,-78.61667,Approximate (to the min),Pasture (Improved),grazing,Agriculture,15,1.00,46.5,64.4,239.3,,
+45,CCR1,CCR1bPA,Maquipu- cuna Forest Reserve,Districto Metropolitano de Quito, Ecuador,0.08333,-78.61667,Approximate (to the min),Pasture (Improved),grazing,Agriculture,15,1.00,46.5,50.5,243.5,,
+45,CCR1,CCR1cPA,Maquipu- cuna Forest Reserve,Districto Metropolitano de Quito, Ecuador,0.08333,-78.61667,Approximate (to the min),Pasture (Improved),grazing,Agriculture,15,1.00,50.5,42.9,210.6,,
+45,CCR1,CCR1dPA,Maquipu- cuna Forest Reserve,Districto Metropolitano de Quito, Ecuador,0.08333,-78.61667,Approximate (to the min),Pasture (Improved),grazing,Agriculture,15,1.00,43.4,43.4,211.2,,
+45,CCR1,CCR1aN,Maquipu- cuna Forest Reserve,Districto Metropolitano de Quito, Ecuador,0.08333,-78.61667,Approximate (to the min),Forest,forest,Native,,1.00,38.8,40.3,226.6,,
+45,CCR1,CCR1bN,Maquipu- cuna Forest Reserve,Districto Metropolitano de Quito, Ecuador,0.08333,-78.61667,Approximate (to the min),Forest,forest,Native,,1.00,48.2,38.8,147.4,,
+45,CCR1,CCR1cN,Maquipu- cuna Forest Reserve,Districto Metropolitano de Quito, Ecuador,0.08333,-78.61667,Approximate (to the min),Forest,forest,Restored,,1.00,64.4,46.5,258.5,,
+45,CCR1,CCR1dN,Maquipu- cuna Forest Reserve,Districto Metropolitano de Quito, Ecuador,0.08333,-78.61667,Approximate (to the min),Forest,forest,Restored,,1.00,42.9,42.3,183.0,,
+41,CF1Ad6,CF1Ad6aA,,,Martinique,,,,Banana,plantation,Agriculture,,0.20,31.6,,,63.1,0.20
+41,CF1Ad6,CF1Ad6bA,,,Martinique,,,,Banana,plantation,Agriculture,,0.20,29.3,,,53.8,0.20
+41,CF1Ad6,CF1Ad6cA,,,Martinique,,,,Sugar Cane,cropping,Agriculture,,0.20,22.9,,,46.4,0.20
+41,CF1Ad6,CF1Ad6aN,,,Martinique,,,,Forest,forest,Native,,0.20,40.5,,,81.0,0.20
+41,CF1Ad6,CF1Ad6bN,,,Martinique,,,,Forest,forest,Native,,0.20,40.1,,,80.3,0.20
+41,CF2Aw6,CF2Aw6aA,,,Martinique,,,,Mahogany,plantation,Agriculture,,0.20,37.4,,,80.6,0.20
+41,CF2Aw6,CF2Aw6bA,,,Martinique,,,,Mahogany,plantation,Agriculture,,0.20,37.0,,,66.6,0.20
+41,CF2Aw6,CF2Aw6cA,,,Martinique,,,,Herbaceous fallow,cropping,Agriculture,,0.20,22.9,,,47.0,0.20
+41,CF2Aw6,CF2Aw6dA,,,Martinique,,,,Sugar Cane,cropping,Agriculture,,0.20,38.9,,,72.2,0.20
+41,CF2Aw6,CF2Aw6eA,,,Martinique,,,,Food Crops,cropping,Agriculture,,0.20,22.7,,,49.4,0.20
+41,CF2Aw6,CF2Aw6fA,,,Martinique,,,,Banana,plantation,Agriculture,,0.20,21.6,,,43.4,0.20
+41,CF2Aw6,CF2Aw6N,,,Martinique,,,,Forest,forest,Native,,0.20,49.1,,,109.3,0.20
+41,CF3Fi6,CF3Fi6aA,,,Martinique,,,,Tree Fallow,plantation,Agriculture,,0.20,30.3,,,61.6,0.20
+41,CF3Fi6,CF3Fi6bA,,,Martinique,,,,Sugar Cane,cropping,Agriculture,,0.20,33.7,,,68.0,0.20
+41,CF3Fi6,CF3Fi6cA,,,Martinique,,,,Sugar Cane,cropping,Agriculture,,0.20,30.8,,,59.1,0.20
+41,CF3Fi6,CF3Fi6dA,,,Martinique,,,,Sugar Cane,cropping,Agriculture,,0.20,29.4,,,56.4,0.20
+41,CF3Fi6,CF3Fi6eA,,,Martinique,,,,Market-Gardening,cropping,Agriculture,,0.20,13.3,,,37.0,0.20
+41,CF3Fi6,CF3Fi6aN,,,Martinique,,,,Forest,forest,Native,,0.20,39.7,,,82.9,0.20
+41,CF3Fi6,CF3Fi6bN,,,Martinique,,,,Forest,forest,Native,,0.20,33.4,,,69.7,0.20
+5,CJK1,CJK1NATIVEN,Curtis Prairie,Wisconsin, USA,43.04990,-89.42326,Exact estimated,Prairie,grassland,Native,,1.00,,,357.2,,
+5,CJK1,CJK1RESTOREDN,Curtis Prairie,Wisconsin, USA,43.03876,-89.42802,Exact estimated,Prairie Restored,grassland,Restored,"Farmed 100y, Restored 65 ya",1.00,,,184.8,,
+9,DMO17,DMO17PA,Lat_17S,Goiás, Brazil,-17.93778,-51.64194,Approximate (plots adjacent),Pasture( improved),grazing,Agriculture,36,1.00,13.4,35.6,80.8,,
+9,DMO17,DMO17A,Lat_17S,Goiás, Brazil,-17.93778,-51.64194,Approximate (plots adjacent),Sugarcane,cropping,Agriculture,converted from pasture in 2009,1.00,14.5,43.4,116.5,,
+9,DMO17,DMO17N,Lat_17S,Goiás, Brazil,-17.93778,-51.64194,Approximate (plots adjacent),Cerradão,savanna,Native,,1.00,26.8,61.1,128.8,,
+9,DMO21,DMO21PA,Lat_21S,São Paulo, Brazil,-21.24667,-50.78444,Approximate (plots adjacent),Pasture( improved),grazing,Agriculture,36,1.00,17.3,39.8,84.7,,
+9,DMO21,DMO21A,Lat_21S,São Paulo, Brazil,-21.24667,-50.78444,Approximate (plots adjacent),Sugarcane,cropping,Agriculture,converted from pasture in 2010,1.00,15.9,38.3,81.4,,
+9,DMO21,DMO21N,Lat_21S,São Paulo, Brazil,-21.24667,-50.78444,Approximate (plots adjacent),Atlantic forest,forest,Native,,1.00,23.9,50.7,95.2,,
+9,DMO23,DMO23PA,Lat_23S,São Paulo, Brazil,-23.08090,-49.62613,Exact,Pasture( improved),grazing,Agriculture,36,1.00,35.4,81.3,182.3,,
+9,DMO23,DMO23A,Lat_23S,São Paulo, Brazil,-23.08012,-49.62444,Exact,Sugarcane,cropping,Agriculture,converted from pasture in 1990,1.00,24.4,67.5,191.8,,
+9,DMO23,DMO23N,Lat_23S,São Paulo, Brazil,-23.08237,-49.62225,Exact,Atlantic forest,forest,Native,,1.00,40.4,99.2,238.4,,
+20,DS1,DS1aA, Maasai plains,Manyara Region, Tanzinia,-3.21389,37.05333,,Maize and Beans,cropping,Agriculture,3,0.10,11.9,,,,
+20,DS1,DS1bA, Maasai plains,Manyara Region, Tanzinia,-3.21389,37.05333,,Maize and Beans,cropping,Agriculture,15,0.10,11.8,,,,
+20,DS1,DS1N, Maasai plains,Manyara Region, Tanzinia,-3.21389,37.05333,,Tropical Woodland,savanna,Native,,0.10,23.7,,,,
+3,EAF1,EAF1DPA,Embrapa Cerrados,"Panaltina,  Distrito Federal", Brazil,-15.59924,-47.72138,Approximate,Soybean-corn rotation,cropping,Agriculture,31,1.00,,56.7,140.2,,
+3,EAF1,EAF1NT1A,Embrapa Cerrados,"Panaltina,  Distrito Federal", Brazil,-15.59924,-47.72138,Approximate,Soybean-corn rotation,cropping,Agriculture,31,1.00,,60.7,145.8,,
+3,EAF1,EAF1MPA,Embrapa Cerrados,"Panaltina,  Distrito Federal", Brazil,-15.59924,-47.72138,Approximate,Soybean-corn rotation,cropping,Agriculture,31,1.00,,50.1,125.8,,
+3,EAF1,EAF1NT2A,Embrapa Cerrados,"Panaltina,  Distrito Federal", Brazil,-15.59924,-47.72138,Approximate,Soybean-corn rotation,cropping,Agriculture,31,1.00,,55.7,135.8,,
+3,EAF1,EAF1NVN,Embrapa Cerrados,"Panaltina,  Distrito Federal", Brazil,-15.60763,-47.72030,Exact estimated,Cerrado,savanna,Native,,1.00,,70.5,164.3,,
+6,EDA1,EDA1A,Sete Lagoas,Sete Lagoas, Brazil,-19.49917,-44.18417,Exact,Pasture( improved),grazing,Agriculture,n/a -long,0.60,26.0,83.6,,168.5,0.60
+6,EDA1,EDA1N,Sete Lagoas,Sete Lagoas, Brazil,-19.49361,-44.18583,Exact,Cerrado,savanna,Native,,0.60,28.4,87.8,,168.6,0.60
+6,EDA10,EDA10A,Nova Esperança do Sul,Nova Esperança do Sul, Brazil,-29.45917,-54.82139,Exact,Pasture( improved),grazing,Agriculture,n/a-long,0.60,21.7,69.5,,135.7,0.60
+6,EDA10,EDA10N,Nova Esperança do Sul,Nova Esperança do Sul, Brazil,-29.45861,-54.82139,Exact,Atlantic Forest,forest,Native,,0.60,34.5,103.3,,186.2,0.60
+6,EDA2,EDA2A,São Carlos,São Carlos, Brazil,-21.98028,-47.85278,Exact,Pasture( improved),grazing,Agriculture,n/a -long,0.60,27.1,81.2,,150.8,0.60
+6,EDA2,EDA2N,São Carlos,São Carlos, Brazil,-21.97722,-47.85472,Exact,Cerrado,savanna,Native,,0.60,33.6,93.1,,162.0,0.60
+6,EDA3,EDA3A,Cafeara,Cafeara, Brazil,-22.87000,-51.72694,Exact,Pasture( improved),grazing,Agriculture,n/a -long,0.60,21.3,65.3,,133.9,0.60
+6,EDA3,EDA3N,Cafeara,Cafeara, Brazil,-20.83389,-51.71444,Exact,Atlantic Forest,forest,Native,,0.60,34.0,99.5,,192.8,0.60
+6,EDA4,EDA4A,Ipora,Ipora, Brazil,-24.00167,-53.75889,Exact,Pasture( improved),grazing,Agriculture,n/a -long,0.60,18.5,61.4,,125.6,0.60
+6,EDA4,EDA4N,Ipora,Ipora, Brazil,-24.02222,-53.76056,Exact,Atlantic Forest,forest,Native,,0.60,23.6,58.6,,103.8,0.60
+6,EDA5,EDA5A,Xambre,Xambra, Brazil,-23.79278,-53.60556,Exact,Pasture( improved),grazing,Agriculture,n/a-long,0.60,21.5,68.8,,133.4,0.60
+6,EDA5,EDA5N,Xambre,Xambra, Brazil,-23.80806,-53.59028,Exact,Atlantic Forest,forest,Native,,0.60,34.4,102.5,,202.7,0.60
+6,EDA6,EDA6A,Campo Mourão,Campo Mourão, Brazil,-24.10694,-52.36111,Exact,Pasture( improved),grazing,Agriculture,,0.60,16.3,50.9,,96.4,0.60
+6,EDA6,EDA6N,Campo Mourão,Campo Mourão, Brazil,-24.10500,-52.35944,Exact,Atlantic Forest,forest,Native,,0.60,21.0,68.1,,123.5,0.60
+6,EDA7,EDA7A,Ponta Grossa,Ponta Grossa, Brazil,-25.11500,-50.06361,Exact,Pasture( improved),grazing,Agriculture,n/a-long,0.60,17.0,52.9,,101.8,0.60
+6,EDA7,EDA7N,Ponta Grossa,Ponta Grossa, Brazil,-25.11194,-50.06361,Exact,Atlantic Forest,forest,Native,,0.60,16.9,48.6,,87.4,0.60
+6,EDA8,EDA8A,Arroio dos Ratos,Arroio dos Ratos, Brazil,-30.10167,-51.69194,Exact,Pasture( improved),grazing,Agriculture,n/a-long,0.60,21.9,60.0,,117.1,0.60
+6,EDA8,EDA8N,Arroio dos Ratos,Arroio dos Ratos, Brazil,-30.10167,-51.69667,Exact,Pampa,grassland,Native,,0.60,30.8,82.9,,146.0,0.60
+6,EDA9,EDA9A,Tuparecetã,Tuparecetã, Brazil,-28.94194,-54.82139,Exact,Pasture( improved),grazing,Agriculture,n/a-long,0.60,17.6,58.6,,128.2,0.60
+6,EDA9,EDA9N,Tuparecetã,Tuparecetã, Brazil,-28.93000,-54.82167,Exact,Pampa,grassland,Native,,0.60,16.5,48.3,,101.3,0.60
+27,FY1,FY1A,Bale Mountains,Bale, Ethiopia,6.75000,39.75000,Approximate (to the min),Barley - 3 to 4 year fallow system,cropping,Agriculture,25,1.00,46.4,128.0,302.0,,
+27,FY1,FY1PA,Bale Mountains,Bale, Ethiopia,6.75000,39.75000,Approximate (to the min),Pasture (native),grazing,Agriculture,25,1.00,59.5,163.5,457.5,,
+27,FY1,FY1N,Bale Mountains,Bale, Ethiopia,6.75000,39.75000,Approximate (to the min),Forest,forest,Native,,1.00,53.2,147.0,383.8,,
+24,GAB1,GAB1A,Winter Wheat,Missouri, USA,38.94268,-92.32048,Exact estimated,Wheat,cropping,Agriculture,99,0.50,39.7,96.2,,127.9,0.50
+24,GAB1,GAB1N,Native Prairie,Missouri, USA,38.94833,-91.99472,Exact estimated,Prairie ,grassland,Native,,0.50,49.3,139.6,,172.8,0.50
+55,GC1,GC1N,Mawsawa,northeast India,India,25.25035,91.70345,exact,Forest,forest,Native,,0.20,44.8,,,92.8,0.20
+55,GC2,GC2N,Nogthymmai,northeast India,India,25.25079722,91.7357,exact,forest,forest,Native,,0.20,41.4,,,78.5,0.20
+55,GC3,GC3N,Pdengshnong,northeast India,India,25.28562778,91.72514722,exact,forest,forest,Native,,0.20,26.9,,,52.2,0.20
+52,HBC1,HBC1aA,Georgetown,Kentucky, USA,38.21945,-84.47942,Approximate (location is of farm),Cor-Soybean-pumpkin No Till,cropping,Agriculture,8,0.60,30.2,76.6,,116.6,0.60
+52,HBC1,HBC1bA,Georgetown,Kentucky, USA,38.21945,-84.47942,Approximate (location is of farm),Corn-Soybean-Vegetables Plow,cropping,Agriculture,10,0.60,17.0,52.4,,103.7,0.60
+52,HBC1,HBC1N,Georgetown,Kentucky, USA,38.21945,-84.47942,Approximate (location is of farm),woodland/forest,forest,Native,,0.60,39.8,111.2,,195.4,0.60
+52,HBC10,HBC10aa,Lewisburg,Pennsylvania, USA,40.96661,-76.93043,Approximate (location is of farm),"Corn-Soybean, Rye No Till",cropping,Agriculture,5,0.60,29.0,79.9,,105.4,0.60
+52,HBC10,HBC10bA,Lewisburg,Pennsylvania, USA,40.96661,-76.93043,Approximate (location is of farm),"Corn-Soybean, Rye Plow",cropping,Agriculture,8,0.60,23.7,69.6,,91.7,0.60
+52,HBC10,HBC10N,Lewisburg,Pennsylvania, USA,40.96661,-76.93043,Approximate (location is of farm),woodland/forest,forest,Native,,0.60,43.0,100.5,,173.4,0.60
+52,HBC11,HBC11aA,Lancaster,Pennsylvania, USA,40.10219,-76.53379,Approximate (location is of farm),Corn Soybean No Till,cropping,Agriculture,4,0.60,22.4,62.3,,95.3,0.60
+52,HBC11,HBC11bA,Lancaster,Pennsylvania, USA,40.10219,-76.53379,Approximate (location is of farm),Corn Soybean Plow,cropping,Agriculture,10,0.60,22.7,68.9,,102.1,0.60
+52,HBC11,HBC11N,Lancaster,Pennsylvania, USA,40.10219,-76.53379,Approximate (location is of farm),woodland/forest,forest,Native,,0.60,26.7,80.8,,143.6,0.60
+52,HBC2,HBC2aA,Glasgow,Kentucky, USA,37.00204,-85.92639,Approximate (location is of farm),Corn-Soybean Notill,cropping,Agriculture,10,0.60,34.5,65.1,,85.0,0.60
+52,HBC2,HBC2bA,Glasgow,Kentucky, USA,37.00204,-85.92639,Approximate (location is of farm),Corn-Soybean-Tabacco Plow,cropping,Agriculture,10,0.60,14.1,42.4,,78.3,0.60
+52,HBC2,HBC2N,Glasgow,Kentucky, USA,37.00204,-85.92639,Approximate (location is of farm),woodland/forest,forest,Native,,0.60,36.8,74.1,,95.6,0.60
+52,HBC3,HBC3aA,McKee,Kentucky, USA,37.43145,-83.99323,Approximate (location is of farm),Corn No Till,cropping,Agriculture,15,0.60,24.3,66.4,,90.8,0.60
+52,HBC3,HBC3bA,McKee,Kentucky, USA,37.43145,-83.99323,Approximate (location is of farm),Tabcco-Wheat-Rye Plow,cropping,Agriculture,10,0.60,22.7,73.2,,132.8,0.60
+52,HBC3,HBC3N,McKee,Kentucky, USA,37.43145,-83.99323,Approximate (location is of farm),woodland/forest,forest,Native,,0.60,39.9,63.3,,86.9,0.60
+52,HBC4,HBC4aA,Fremont,Ohio, USA,41.35932,-83.08684,Approximate (location is of farm),Corn-Soybean Nottill,cropping,Agriculture,15,0.60,23.8,66.4,,111.6,0.60
+52,HBC4,HBC4bA,Fremont,Ohio, USA,41.35932,-83.08684,Approximate (location is of farm),Corn-Soybean Plow,cropping,Agriculture,15,0.60,24.8,77.1,,132.4,0.60
+52,HBC4,HBC4N,Fremont,Ohio, USA,41.35932,-83.08684,Approximate (location is of farm),woodland/forest,forest,Native,,0.60,41.2,128.9,,185.5,0.60
+52,HBC5,HBC5aA,Jackson,Ohio, USA,38.97298,-82.78978,Approximate (location is of farm),Corn- Soybean -Alfalfa No till,cropping,Agriculture,12,0.60,21.2,46.2,,63.0,0.60
+52,HBC5,HBC5bA,Jackson,Ohio, USA,38.97298,-82.78978,Approximate (location is of farm),Corn Plow,cropping,Agriculture,20,0.60,18.0,52.5,,89.0,0.60
+52,HBC5,HBC5N,Jackson,Ohio, USA,38.97298,-82.78978,Approximate (location is of farm),woodland/forest,forest,Native,,0.60,30.3,81.6,,189.1,0.60
+52,HBC6,HBC6aA,Canal Fulton,Ohio, USA,40.87880,-81.64036,Approximate (location is of farm),Corn Soybean No Till,cropping,Agriculture,30,0.60,30.4,82.5,,114.6,0.60
+52,HBC6,HBC6bA,Canal Fulton,Ohio, USA,40.87880,-81.64036,Approximate (location is of farm),Corn-SOybean Plow,cropping,Agriculture,15,0.60,14.3,49.8,,84.0,0.60
+52,HBC6,HBC6N,Canal Fulton,Ohio, USA,40.87880,-81.64036,Approximate (location is of farm),woodland/forest,forest,Native,,0.60,31.3,76.1,,112.2,0.60
+52,HBC7,HBC7aA,Grove City,Pennsylvania, USA,41.22136,-80.07592,Approximate (location is of farm),Corn-Soybean No Till,cropping,Agriculture,10,0.60,31.5,87.6,,137.8,0.60
+52,HBC7,HBC7bA,Grove City,Pennsylvania, USA,41.22136,-80.07592,Approximate (location is of farm),Corn-Soybean Plow,cropping,Agriculture,30,0.60,34.1,86.2,,127.9,0.60
+52,HBC7,HBC7N,Grove City,Pennsylvania, USA,41.22136,-80.07592,Approximate (location is of farm),woodland/forest,forest,Native,,0.60,36.7,100.3,,188.6,0.60
+52,HBC8,HBC8aA,Greenville,Pennsylvania, USA,41.35298,-80.49222,Approximate (location is of farm),Corn-Soybean No till,cropping,Agriculture,8,0.60,16.7,44.1,,64.9,0.60
+52,HBC8,HBC8bA,Greenville,Pennsylvania, USA,41.35298,-80.49222,Approximate (location is of farm),Corn-Soybean Plow,cropping,Agriculture,3,0.60,16.6,45.8,,62.6,0.60
+52,HBC8,HBC8N,Greenville,Pennsylvania, USA,41.35298,-80.49222,Approximate (location is of farm),woodland/forest,forest,Native,,0.60,41.0,120.3,,219.4,0.60
+52,HBC9,HBC9aA,Troy,Pennsylvania, USA,41.82269,-76.86200,Approximate (location is of farm),Corn No till,cropping,Agriculture,20,0.60,31.2,73.2,,106.9,0.60
+52,HBC9,HBC9bA,Troy,Pennsylvania, USA,41.82269,-76.86200,Approximate (location is of farm),Corn Plow,cropping,Agriculture,20,0.60,13.5,54.6,,105.0,0.60
+52,HBC9,HBC9N,Troy,Pennsylvania, USA,41.82269,-76.86200,Approximate (location is of farm),woodland/forest,forest,Native,,0.60,38.1,82.5,,139.5,0.60
+15,HPC1,HPC1A,"Lamberton,MN",Minnesota, USA,44.23333,-95.30000,Approximate (to the second),Corn,cropping,Agriculture,33,1.00,23.4,57.4,112.0,,
+15,HPC1,HPC1N,"Brownton,MN",Minnesota, USA,44.72275,-94.30078,Approximate,grasslands,grassland,Native,,1.00,50.1,118.0,186.2,,
+15,HPC2,HPC2A,"Arlington, WI",Wisconsin, USA,43.30000,-89.35000,Approximate (to the second),Corn,cropping,Agriculture,35,1.00,24.7,59.1,99.7,,
+15,HPC2,HPC2N,"Arlington, WI",Wisconsin, USA,43.30000,-89.35000,Approximate (to the second),grasslands,grassland,Native,,1.00,30.0,69.1,107.3,,
+15,HPC3,HPC3A,"Kellogg Biological Station, MI",Michigan, USA,42.30000,-89.50000,Approximate (to the second),Corn,cropping,Agriculture,8,1.00,15.3,33.3,48.5,,
+15,HPC3,HPC3N,"Kellogg Biological Station, MI",Michigan, USA,42.30000,-89.50000,Approximate (to the second),deciduous hardwood forest,forest,Native,,1.00,23.2,51.3,67.6,,
+15,HPC4,HPC4A,"Hoytville, OH",Ohio, USA,41.00000,-84.00000,Approximate (to the second),Corn,cropping,Agriculture,31,1.00,24.4,59.5,113.2,,
+15,HPC4,HPC4N,"Hoytville, OH",Ohio, USA,41.00000,-84.00000,Approximate (to the second),deciduous hardwood forest,forest,Native,,0.50,48.3,106.3,,125.9,0.50
+15,HPC5,HPC5A,"Wooster,OH",Ohio, USA,40.80000,-82.00000,Approximate (to the second),Corn,cropping,Agriculture,31,1.00,12.7,32.8,56.6,,
+15,HPC5,HPC5N,"Wooster,OH",Ohio, USA,40.80000,-82.00000,Approximate (to the second),deciduous hardwood forest,forest,Native,,0.50,28.5,62.0,,72.1,0.50
+15,HPC6,HPC6A,"Lexington,KY",Kentucky, USA,38.11667,-84.48333,Approximate (to the second),Corn,cropping,Agriculture,23,1.00,15.4,34.9,54.0,,
+15,HPC6,HPC6N,"Lexington,KY",Kentucky, USA,38.11667,-84.48333,Approximate (to the second),deciduous hardwood forest,forest,Native,,0.50,29.4,66.7,,82.7,0.50
+33,IG1,IG1A,Braemar,New South Wales, Australia,-29.83702,150.47961,Approximate (to the centisecond),"Cereals, Oats, lucerne",cropping,Agriculture, >30,0.50,,35.7,,,
+33,IG1,IG1PA,Braemar,New South Wales, Australia,-29.83702,150.47961,Approximate (to the centisecond),Pasture (native),grazing,Agriculture,"""More recently",0.50,,44.9,,,
+33,IG1,IG1N,Braemar,New South Wales, Australia,-29.83702,150.47961,Approximate (to the centisecond),Woodland,savanna,Native,,0.50,,53.1,,,
+33,IG2,IG2A,Dingwall,New South Wales, Australia,-29.82300,150.45016,Approximate (to the centisecond),"Cereals, Oats, lucerne",cropping,Agriculture, >30,0.50,,76.0,,,
+33,IG2,IG2PA,Dingwall,New South Wales, Australia,-29.82300,150.45016,Approximate (to the centisecond),Pasture (native),grazing,Agriculture,"""More recently",0.50,,64.8,,,
+33,IG2,IG2N,Dingwall,New South Wales, Australia,-29.82300,150.45016,Approximate (to the centisecond),Woodland,savanna,Native,,0.50,,80.7,,,
+33,IG3,IG3A,Yeral,New South Wales, Australia,-29.82521,150.67371,Approximate (to the centisecond),"Cereals, Oats, lucerne",cropping,Agriculture, >30,0.50,,31.5,,,
+33,IG3,IG3PA,Yeral,New South Wales, Australia,-29.82521,150.67371,Approximate (to the centisecond),Pasture (native),grazing,Agriculture,"""More recently",0.50,,57.7,,,
+33,IG3,IG3N,Yeral,New South Wales, Australia,-29.82521,150.67371,Approximate (to the centisecond),Woodland,savanna,Native,,0.50,,101.4,,,
+33,IG4,IG4A,Pinetrees,New South Wales, Australia,-29.80259,150.67728,Approximate (to the centisecond),"Cereals, Oats, lucerne",cropping,Agriculture, >30,0.50,,37.3,,,
+33,IG4,IG4PA,Pinetrees,New South Wales, Australia,-29.80259,150.67728,Approximate (to the centisecond),Pasture (native),grazing,Agriculture,"""More recently",0.50,,40.3,,,
+33,IG4,IG4N,Pinetrees,New South Wales, Australia,-29.80259,150.67728,Approximate (to the centisecond),Woodland,savanna,Native,,0.50,,58.6,,,
+33,IG5,IG5A,Myall Creek,New South Wales, Australia,-29.76065,150.53588,Approximate (to the centisecond),"Cereals, Oats, lucerne",cropping,Agriculture, >30,0.50,,39.3,,,
+33,IG5,IG5PA,Myall Creek,New South Wales, Australia,-29.76065,150.53588,Approximate (to the centisecond),Pasture (native),grazing,Agriculture,"""More recently",0.50,,37.6,,,
+33,IG5,IG5N,Myall Creek,New South Wales, Australia,-29.76065,150.53588,Approximate (to the centisecond),Woodland,savanna,Native,,0.50,,34.5,,,
+33,IG6,IG6A,The Vally,New South Wales, Australia,-29.87340,150.49619,Approximate (to the centisecond),"Cereals, Oats, lucerne",cropping,Agriculture, >30,0.50,,44.5,,,
+33,IG6,IG6PA,The Vally,New South Wales, Australia,-29.87340,150.49619,Approximate (to the centisecond),Pasture (native),grazing,Agriculture,"""More recently",0.50,,62.9,,,
+33,IG6,IG6N,The Vally,New South Wales, Australia,-29.87340,150.49619,Approximate (to the centisecond),Woodland,savanna,Native,,0.50,,94.7,,,
+1,JEM37,JEM37A,Campo Florido,Minas Gerais, Brazil,,,,Sugarcane,cropping,Agriculture,4,1.00,,29.6,66.0,,
+1,JEM37,JEM37N,Campo Florido,Minas Gerais, Brazil,,,,Cerrado,savanna,Native,,1.00,,35.8,74.3,,
+1,JEM41,JEM41A,Araporã,Minas Gerais, Brazil,,,,Sugarcane,cropping,Agriculture,39,1.00,,62.1,152.1,,
+1,JEM41,JEM41N,Araporã,Minas Gerais, Brazil,,,,Cerrado,savanna,Native,,1.00,,105.6,201.8,,
+1,JEM49,JEM49A,Araporã,Minas Gerais, Brazil,,,,Sugarcane,cropping,Agriculture,6,1.00,,69.5,164.0,,
+1,JEM49,JEM49N,Araporã,Minas Gerais, Brazil,,,,Cerrado,savanna,Native,,1.00,,73.1,153.2,,
+1,JEM53,JEM53A,Araporã,Minas Gerais, Brazil,,,,Sugarcane,cropping,Agriculture,3,1.00,,66.6,132.3,,
+1,JEM53,JEM53N,Araporã,Minas Gerais, Brazil,,,,Cerrado,savanna,Native,,1.00,,86.9,155.4,,
+1,JEM59,JEM59A,Goiatuba,Goiás, Brazil,,,,Sugarcane,cropping,Agriculture,20,1.00,,78.1,187.0,,
+1,JEM59,JEM59N,Goiatuba,Goiás, Brazil,,,,Cerrado,savanna,Native,,1.00,,103.7,208.9,,
+18,JGG2,JGG2A,Neal Smith National Wildlife Refuge- Notill Summit,Iowa, United States,41.58333,-93.23333,Approximate ( to the min),Maize no till,cropping,Agriculture,13,0.60,25.7,71.8,,112.0,0.60
+18,JGG2,JGG2N,Rolling Thunder Prairie Summit,Iowa, United States,41.16667,-93.71667,Approximate ( to the min),Prairie ,grassland,Native,,0.60,37.2,90.0,,123.6,0.60
+18,JGG2,JGG2-1993N,Neal Smith National Wildlife Refuge - 1993Restored Summit,Iowa, United States,41.58333,-93.23333,Approximate ( to the min),Prairie ,grassland,Restored,23,0.60,27.5,76.1,,117.7,0.60
+18,JGG2,JGG2-1998N,Neal Smith National Wildlife Refuge -1998 Restored Summit,Iowa, United States,41.58333,-93.23333,Approximate ( to the min),Prairie ,grassland,Restored,18,0.60,24.4,60.4,,81.2,0.60
+18,JGG2,JGG2-2003N,Neal Smith National Wildlife Refuge - 2003 Summit,Iowa, United States,41.58333,-93.23333,Approximate ( to the min),Prairie ,grassland,Restored,13,0.60,20.5,62.0,,106.4,0.60
+18,JGG4,JGG4A,Neal Smith National Wildlife Refuge- Notill Midslope,Iowa, United States,41.58333,-93.23333,Approximate ( to the min),Maize no till,cropping,Agriculture,13,0.60,22.6,61.4,,103.8,0.60
+18,JGG4,JGG4N,Rolling Thunder Prairie Midslope,Iowa, United States,41.16667,-93.71667,Approximate ( to the min),Prairie ,grassland,Native,,0.60,34.4,83.0,,115.0,0.60
+18,JGG4,JGG4-1993N,Neal Smith National Wildlife Refuge - 1993Restored Midslope,Iowa, United States,41.58333,-93.23333,Approximate ( to the min),Prairie ,grassland,Restored,23,0.60,16.8,47.5,,72.1,0.60
+18,JGG4,JGG4-1998N,Neal Smith National Wildlife Refuge -1998 Restored Midslope,Iowa, United States,41.58333,-93.23333,Approximate ( to the min),Prairie ,grassland,Restored,18,0.60,22.9,58.6,,81.1,0.60
+18,JGG4,JGG4-2003N,Neal Smith National Wildlife Refuge - 2003 Midslope,Iowa, United States,41.58333,-93.23333,Approximate ( to the min),Prairie ,grassland,Restored,13,0.60,26.9,85.6,,166.6,0.60
+18,JGG6,JGG6A,Neal Smith National Wildlife Refuge- Notill Toe-slope,Iowa, United States,41.58333,-93.23333,Approximate ( to the min),Maize no till,cropping,Agriculture,13,0.60,29.8,85.3,,170.2,0.60
+18,JGG6,JGG6N,Rolling Thunder Prairie Toe-slope,Iowa, United States,41.16667,-93.71667,Approximate ( to the min),Prairie ,grassland,Native,,0.60,27.1,85.6,,159.8,0.60
+18,JGG6,JGG6-1993N,Neal Smith National Wildlife Refuge - 1993Restored Toe-slope,Iowa, United States,41.58333,-93.23333,Approximate ( to the min),Prairie ,grassland,Restored,23,0.60,29.7,79.6,,153.8,0.60
+18,JGG6,JGG6-1998N,Neal Smith National Wildlife Refuge -1998 Restored Toe-slope,Iowa, United States,41.58333,-93.23333,Approximate ( to the min),Prairie ,grassland,Restored,18,0.60,27.2,79.7,,152.6,0.60
+18,JGG6,JGG6-2003N,Neal Smith National Wildlife Refuge - 2003 Toe-slope,Iowa, United States,41.58333,-93.23333,Approximate ( to the min),Prairie ,grassland,Restored,13,0.60,25.4,77.5,,156.0,0.60
+54,JHZ1,JHZ1A,Upper Slope,Sichuan Province, China,30.38222,104.57333,Approximate,"Wheat , Corn, Sweet Potatoe",cropping,Agriculture,,0.30,25.3,21.8,,,
+54,JHZ1,JHZ1N,Upper Slope,Sichuan Province, China,30.38222,104.57333,Approximate (the plots are within 1 km),Grassland,grassland,Native,,0.30,10.7,40.9,,,
+54,JHZ2,JHZ2A,Middle slope,Sichuan Province, China,30.38222,104.57333,Approximate,"Wheat , Corn, Sweet Potatoe",cropping,Agriculture,,0.30,25.2,27.0,,,
+54,JHZ2,JHZ2N,Middle Slope,Sichuan Province, China,30.38222,104.57333,Approximate,Grassland,grassland,Native,,0.30,11.5,41.1,,,
+54,JHZ3,JHZ3A,Lower slope,Sichuan Province, China,30.38222,104.57333,Approximate,"Wheat , Corn, Sweet Potatoe",cropping,Agriculture,,0.30,25.3,28.6,,,
+54,JHZ3,JHZ3N,Lower slope,Sichuan Province, China,30.38222,104.57333,Approximate,Grassland,grassland,Native,,0.30,12.5,41.1,,,
+21,JL1,JL1aA,Nandi,Nandi County, Kenya,0.07500,34.97611,Approximate ( to the second),Maize,cropping,Agriculture,2,0.10,48.3,,,,
+21,JL1,JL1bA,Nandi,Nandi County, Kenya,0.07500,34.97611,Approximate ( to the second),Maize,cropping,Agriculture,4,0.10,45.4,,,,
+21,JL1,JL1cA,Nandi,Nandi County, Kenya,0.07500,34.97611,Approximate ( to the second),Maize,cropping,Agriculture,20,0.10,31.5,,,,
+21,JL1,JL1dA,Nandi,Nandi County, Kenya,0.07500,34.97611,Approximate ( to the second),Maize,cropping,Agriculture,30,0.10,30.0,,,,
+21,JL1,JL1eA,Nandi,Nandi County, Kenya,0.07500,34.97611,Approximate ( to the second),Maize,cropping,Agriculture,50,0.10,20.4,,,,
+21,JL1,JL1fA,Nandi,Nandi County, Kenya,0.07500,34.97611,Approximate ( to the second),Maize,cropping,Agriculture,80,0.10,20.3,,,,
+21,JL1,JL1gA,Nandi,Nandi County, Kenya,0.07500,34.97611,Approximate ( to the second),Maize,cropping,Agriculture,100,0.10,27.4,,,,
+21,JL1,JL1N,Nandi,Nandi County, Kenya,0.07500,34.97611,Approximate ( to the second),Tropical Rainforest,forest,Native,,0.10,61.8,,,,
+21,JL2,JL2aA,Kakamega,Kakamega County, Kenya,0.23861,34.95361,Approximate ( to the second),Maize,cropping,Agriculture,2,0.10,48.5,,,,
+21,JL2,JL2bA,Kakamega,Kakamega County, Kenya,0.23861,34.95361,Approximate ( to the second),Maize,cropping,Agriculture,4,0.10,41.7,,,,
+21,JL2,JL2cA,Kakamega,Kakamega County, Kenya,0.23861,34.95361,Approximate ( to the second),Maize,cropping,Agriculture,18,0.10,26.2,,,,
+21,JL2,JL2dA,Kakamega,Kakamega County, Kenya,0.23861,34.95361,Approximate ( to the second),Maize,cropping,Agriculture,45,0.10,30.2,,,,
+21,JL2,JL2eA,Kakamega,Kakamega County, Kenya,0.23861,34.95361,Approximate ( to the second),Maize,cropping,Agriculture,73,0.10,23.2,,,,
+21,JL2,JL2fA,Kakamega,Kakamega County, Kenya,0.23861,34.95361,Approximate ( to the second),Maize,cropping,Agriculture,103,0.10,22.6,,,,
+21,JL2,JL2N,Kakamega,Kakamega County, Kenya,0.23861,34.95361,Approximate ( to the second),Tropical Rainforest,forest,Native,,0.10,90.2,,,,
+21,JL3,JL3aA,,, South Africa,,,,Wheat and Maize,cropping,Agriculture,3,0.20,13.2,,,26.3,0.20
+21,JL3,JL3bA,,, South Africa,,,,Wheat and Maize,cropping,Agriculture,8,0.20,12.2,,,24.3,0.20
+21,JL3,JL3cA,,, South Africa,,,,Wheat and Maize,cropping,Agriculture,10,0.20,10.2,,,20.4,0.20
+21,JL3,JL3dA,,, South Africa,,,,Wheat and Maize,cropping,Agriculture,20,0.20,8.3,,,16.6,0.20
+21,JL3,JL3eA,,, South Africa,,,,Wheat and Maize,cropping,Agriculture,30,0.20,9.0,,,18.0,0.20
+21,JL3,JL3fA,,, South Africa,,,,Wheat and Maize,cropping,Agriculture,40,0.20,8.0,,,16.0,0.20
+21,JL3,JL3gA,,, South Africa,,,,Wheat and Maize,cropping,Agriculture,60,0.20,7.5,,,14.9,0.20
+21,JL3,JL3hA,,, South Africa,,,,Wheat and Maize,cropping,Agriculture,90,0.20,6.6,,,13.2,0.20
+21,JL3,JL3aN,Harrismith,Harrismit, South Africa,-28.28333,29.13333,Approximate ( to the second),Highveld grassland,grassland,Native,,0.20,26.4,,,52.7,0.20
+21,JL3,JL3bN,Kroonstad,Kroonstad, South Africa,-27.65000,27.23333,Approximate ( to the second),Highveld grassland,grassland,Native,,0.20,11.1,,,22.2,0.20
+21,JL3,JL3cN,Tweespruit,Tweespruit, South Africa,-29.66667,26.16667,Approximate ( to the second),Highveld grassland,grassland,Native,,0.20,15.2,,,30.4,0.20
+23,JLC1,JLC1aA,municipal of Vilhena,Rondonia State, Brazil,-12.48333,-60.00000,Approximate (was given the name of a farm),Rice - conventional),cropping,Agriculture,1,0.30,28.2,47.6,,72.1,0.30
+23,JLC1,JLC1bA,municipal of Vilhena,Rondonia State, Brazil,-12.48333,-60.00000,Approximate (was given the name of a farm),Rice - conventional),cropping,Agriculture,4,0.30,34.0,55.4,,79.2,0.30
+23,JLC1,JLC1cA,municipal of Vilhena,Rondonia State, Brazil,-12.48333,-60.00000,Approximate (was given the name of a farm),Rice/Soybean - no till,cropping,Agriculture,3,0.30,35.6,66.5,,82.9,0.30
+23,JLC1,JLC1dA,municipal of Vilhena,Rondonia State, Brazil,-12.48333,-60.00000,Approximate (was given the name of a farm),Rice/Soybean- no till,cropping,Agriculture,4,0.30,33.5,54.4,,75.6,0.30
+23,JLC1,JLC1eA,municipal of Vilhena,Rondonia State, Brazil,-12.48333,-60.00000,Approximate (was given the name of a farm),Rice/Soybean - no till,cropping,Agriculture,5,0.30,34.7,67.5,,84.2,0.30
+23,JLC1,JLC1N,municipal of Vilhena,Rondonia State, Brazil,-12.48333,-60.00000,Approximate (was given the name of a farm),Cerrado,savanna,Native,,0.30,34.1,50.0,,77.4,0.30
+37,JMS1,JMS1aA,"experimental station of Instituto Agronômico do Paraná, Ponta Grossa",Parana, Brazil,-25.15000,-50.15000,Approximate (to the min),"Soy, Oats, Wheat, Maize Conventional Till",cropping,Agriculture,49,1.00,36.1,103.4,260.6,,
+37,JMS1,JMS1bA,"experimental station of Instituto Agronômico do Paraná, Ponta Grossa",Parana, Brazil,-25.15000,-50.15000,Approximate (to the min),"Soy, Oats, Wheat, Maize Minimum Till",cropping,Agriculture,49,1.00,43.6,102.5,248.3,,
+37,JMS1,JMS1cA,"experimental station of Instituto Agronômico do Paraná, Ponta Grossa",Parana, Brazil,-25.15000,-50.15000,Approximate (to the min),"Soy, Otats, Wheat, Maize No Till",cropping,Agriculture,49,1.00,56.2,120.6,285.2,,
+37,JMS1,JMS1N,"experimental station of Instituto Agronômico do Paraná, Ponta Grossa",Parana, Brazil,-25.15000,-50.15000,Approximate (to the min),Subtropical Prairie,grassland,Native,,1.00,62.6,119.2,259.0,,
+51,JSSA1,JSSA1A,Mid-North,South Australia, Australia,-34.24408,138.82665,Exact,Pasture (native),grazing,Agriculture,>50,0.50,27.6,50.1,,70.7,0.50
+51,JSSA1,JSSA1N,Mid-North,South Australia, Australia,-34.22990,138.82393,Exact,Open woodland,savanna,Native,,0.50,75.5,118.6,,133.1,0.50
+51,JSSA2,JSSA2A,Mid-North,South Australia, Australia,-33.67889,138.53582,Exact,Pasture (native),grazing,Agriculture,>50,0.50,24.5,54.7,,73.7,0.50
+51,JSSA2,JSSA2N,Mid-North,South Australia, Australia,-33.64916,138.52388,Exact,Open woodland,savanna,Native,,0.50,22.3,51.5,,63.9,0.50
+51,JSSA3,JSSA3A,Mid-North,South Australia, Australia,-34.58207,139.07900,Exact,Pasture (native),grazing,Agriculture,>50,0.50,20.3,40.5,,51.7,0.50
+51,JSSA3,JSSA3N,Mid-North,South Australia, Australia,-34.58316,139.07962,Exact,Open woodland,savanna,Native,,0.50,17.6,36.3,,46.7,0.50
+51,JSSA4,JSSA4A,Mid-North,South Australia, Australia,-32.84510,138.86576,Exact,Pasture (native),grazing,Agriculture,>50,0.50,10.1,21.8,,34.5,0.50
+51,JSSA4,JSSA4N,Mid-North,South Australia, Australia,-32.85073,138.88649,Exact,Open woodland,savanna,Native,,0.50,10.6,30.2,,43.9,0.50
+8,JWH1,JWH1A,Nelson Farm Wshd 2 Ridgetop,Mississippi, USA,34.56422,-89.95837,Exact (couldn't find slope change),"Soybean, Conventional Till",cropping,Agriculture,>100,0.60,13.7,26.6,,38.0,0.60
+8,JWH1,JWH1N,Goodwin Creek WSHD 10 Ridgetop,Mississippi, USA,34.26257,-89.84084,Exact (couldn't find slope change),Hardwood Forest,forest,Native,,0.62,24.1,40.9,,56.7,0.62
+8,JWH2,JWH2A,Nelson Farm Wshd 2 Upper Slope,Mississippi, USA,34.56422,-89.95837,Exact (couldn't find slope change),"Soybean, Conventional Till",cropping,Agriculture,>100,1.00,5.3,18.5,33.0,,
+8,JWH2,JWH2N,Goodwin Creek WSHD 10 Upper Slope,Mississippi, USA,34.26257,-89.84084,Exact (couldn't find slope change),Hardwood Forest,forest,Native,,1.00,20.3,32.4,53.6,,
+8,JWH3,JWH3A,Nelson Farm Wshd 2 Lower Slope,Mississippi, USA,34.56422,-89.95837,Exact (couldn't find slope change),"Soybean, Conventional Till",cropping,Agriculture,>100,1.00,16.0,40.4,66.8,,
+8,JWH3,JWH3N,Goodwin Creek WSHD 10 Lower Slope,Mississippi, USA,34.26257,-89.84084,Exact (couldn't find slope change),Hardwood Forest,forest,Native,,1.00,16.3,29.8,57.0,,
+29,JZ11,JZ11A,Yanqi Basin,Xinjiang, China,42.09568,86.43654,Exact estimated,Hot pepper, irrigated cropping,Agriculture,,1.00,19.2,49.5,113.3,,
+29,JZ12,JZ12A,Yanqi Basin,Xinjiang, China,42.23257,86.16667,Exact estimated,Hot pepper, irrigated cropping,Agriculture,,1.00,18.8,41.9,120.3,,
+29,JZ13,JZ13A,Yanqi Basin,Xinjiang, China,42.20117,86.58792,Exact estimated,Hot pepper, irrigated cropping,Agriculture,,1.00,17.8,45.7,73.6,,
+29,JZ14,JZ14A,Yanqi Basin,Xinjiang, China,42.20897,86.20107,Exact estimated,Hot pepper, irrigated cropping,Agriculture,,1.00,14.4,37.5,100.0,,
+29,JZA1,JZA1N,Yanqi Basin,Xinjiang, China,42.12668,86.25612,Exact estimated,Phragmites australis,semi-arid desert,Native,,1.00,5.0,7.8,27.3,,
+29,JZA2,JZA2N,Yanqi Basin,Xinjiang, China,41.90848,86.72477,Exact estimated,Phragmites australis,semi-arid desert,Native,,1.00,11.5,28.3,79.6,,
+29,JZB1,JZB1N,Yanqi Basin,Xinjiang, China,42.11392,86.38991,Exact estimated,Alhagi sparsifolia,semi-arid desert,Native,,1.00,8.2,20.9,40.2,,
+29,JZB2,JZB2N,Yanqi Basin,Xinjiang, China,42.15582,86.35933,Exact estimated,Alhagi sparsifolia,semi-arid desert,Native,,1.00,6.1,19.8,37.2,,
+29,JZC1,JZC1N,Yanqi Basin,Xinjiang, China,42.12951,86.61468,Exact estimated,Tamarix ramosissima,semi-arid desert,Native,,1.00,13.1,29.1,63.4,,
+29,JZC2,JZC2N,Yanqi Basin,Xinjiang, China,42.29433,86.65443,Exact estimated,Tamarix ramosissima,semi-arid desert,Native,,1.00,6.5,16.0,43.6,,
+29,JZD,JZDN,Yanqi Basin,Xinjiang, China,42.24311,86.57798,Exact estimated,Halostachys caspica,semi-arid desert,Native,,1.00,13.6,36.0,89.0,,
+29,JZE,JZEN,Yanqi Basin,Xinjiang, China,42.18615,86.24159,Exact estimated,Populus tomentosa,semi-arid desert,Native,,1.00,8.2,15.1,29.1,,
+29,JZF,JZFN,Yanqi Basin,Xinjiang, China,42.31417,86.15596,Exact estimated,Glycyrrhiza uralensis,semi-arid desert,Native,,1.00,12.2,28.2,114.9,,
+29,JZG,JZGN,Yanqi Basin,Xinjiang, China,42.15495,86.28890,Exact estimated,Sophora alopecuroides,semi-arid desert,Native,,1.00,10.0,22.0,58.6,,
+29,JZH,JZHN,Yanqi Basin,Xinjiang, China,42.07114,86.34939,Exact estimated,Acroptilon repens,semi-arid desert,Native,,1.00,4.7,11.1,33.7,,
+29,JZJ1,JZJ1A,Yanqi Basin,Xinjiang, China,42.14788,86.65291,Exact estimated,Tomato, irrigated cropping,Agriculture,,1.00,15.1,37.3,69.8,,
+29,JZJ2,JZJ2A,Yanqi Basin,Xinjiang, China,41.96835,86.47324,Exact estimated,Tomato, irrigated cropping,Agriculture,,1.00,20.8,50.8,88.5,,
+29,JZK1,JZK1A,Yanqi Basin,Xinjiang, China,42.07316,86.67737,Exact estimated,Corn, irrigated cropping,Agriculture,,1.00,23.3,72.4,95.3,,
+29,JZK2,JZK2A,Yanqi Basin,Xinjiang, China,42.23996,86.50917,Exact estimated,Corn, irrigated cropping,Agriculture,,1.00,22.7,52.8,109.1,,
+29,JZL,JZLA,Yanqi Basin,Xinjiang, China,42.11074,86.31040,Exact estimated,Beet, irrigated cropping,Agriculture,,1.00,20.3,51.3,81.3,,
+29,JZM,JZMA,Yanqi Basin,Xinjiang, China,42.19938,86.40979,Exact estimated,Cotton, irrigated cropping,Agriculture,,1.00,25.2,64.2,144.6,,
+29,JZN,JZNA,Yanqi Basin,Xinjiang, China,42.10144,86.70948,Exact estimated,Sunflower, irrigated cropping,Agriculture,,1.00,22.1,53.2,118.6,,
+29,JZO,JZOA,Yanqi Basin,Xinjiang, China,42.31608,86.40979,Exact estimated,Brassica rapa L., irrigated cropping,Agriculture,,1.00,22.0,55.1,101.1,,
+7,KLM1,KLM1A,Treymore Cropland Ridgetop,Iowa, USA,41.15000,-95.63333,Approximate,"Corn 138 y plow, Soybean 18 years notill",cropping,Agriculture,156,1.00,19.4,51.1,50.9,,
+7,KLM1,KLM1N,Dinesen Prairie Ridgetop,Iowa, USA,41.70721,-95.28079,Exact,Prairie,grassland,Native,,1.00,31.8,82.7,99.6,,
+7,KLM2,KLM2A,Treymore Cropland Upper midslope,Iowa, USA,41.15000,-95.63333,Approximate,"Corn 138 y plow, Soybean 18 years notill",cropping,Agriculture,156,1.00,13.3,23.1,32.6,,
+7,KLM2,KLM2N,Dinesen Prairie Upper midslope,Iowa, USA,41.70935,-95.28080,Exact,Prairie,grassland,Native,,1.00,31.0,66.1,82.6,,
+7,KLM3,KLM3A,Treymore Cropland Lower slope,Iowa, USA,41.15000,-95.63333,Approximate,"Corn 138 y plow, Soybean 18 years notill",cropping,Agriculture,156,1.00,20.8,54.3,130.2,,
+7,KLM3,KLM3N,Dinesen Prairie lower slope,Iowa, USA,41.70960,-95.27999,Exact,Prairie,grassland,Native,,1.00,39.2,85.5,162.3,,
+28,KMW1,KMW1A,Jaciara,Mato Grosso State, Brazil,-15.98892,-55.07558,Exact,Pasture (native),grazing,Agriculture,5,0.60,,30.9,,,
+28,KMW1,KMW1N,Jaciara,Mato Grosso State, Brazil,-15.98700,-55.08170,Exact,Vereda,grassland,Native,,0.60,,117.5,,,
+28,KMW2,KMW2A,Jaciara,Mato Grosso State, Brazil,-15.98953,-55.07540,Exact,Pasture (native),cropping,Agriculture,5,0.60,,18.9,,,
+28,KMW2,KMW2N,Jaciara,Mato Grosso State, Brazil,-15.98687,-55.08178,Exact,Cerrado,savanna,Native,,0.60,,20.5,,,
+28,KMW3,KMW3A,Jaciara,Mato Grosso State, Brazil,-15.98993,-55.07532,Exact,Pasture (improved),grazing,Agriculture,5,0.60,,15.6,,,
+28,KMW3,KMW3N,Jaciara,Mato Grosso State, Brazil,-15.98668,-55.08197,Exact,Pasture (native),grazing,Agriculture,10,0.60,,22.2,,,
+28,KMW4,KMW4A,Jaciara,Mato Grosso State, Brazil,-15.98843,-55.07558,Exact,Pasture (native),grassland,Agriculture,5,0.60,,45.6,,,
+28,KMW4,KMW4N,Jaciara,Mato Grosso State, Brazil,-15.98723,-55.08157,Exact,Gallery Forest,forest,Native,,0.60,,136.6,,,
+38,KRI1,KRI1cA,Gazipur district,Dhaka division, Bangladesh,24.050158,90.425791,Approximate,Grassland,grazing,Agriculture,21,0.15,15.1,,,22.7,0.15
+38,KRI1,KRI1dA,Gazipur district,Dhaka division, Bangladesh,24.050158,90.425791,Approximate,"Mustard, rice, sugarcane, cotton",cropping,Agriculture,36,0.15,10.2,,,15.3,0.15
+38,KRI1,KRI1aN,Gazipur district,Dhaka division, Bangladesh,24.052553,90.427372,Approximate,S. robusta forest,forest,Native,,0.15,10.2,,,15.4,0.15
+38,KRI1,KRI1bN,Gazipur district,Dhaka division, Bangladesh,24.076541,90.444279,Approximate,Acacia auriculiformi,forest,Restored,7,0.15,15.1,,,22.7,0.15
+35,LAF1,LAF1cA,Lamego Spontaneous System,Bahia State, Brazil,-13.45000,-39.08333,Approximate (to the min),Oil Palm and Secondary Forest,plantation,Agriculture,NA,0.30,21.8,44.0,,44.0,0.30
+35,LAF1,LA1FaA,Opalma Farm,Bahia State, Brazil,-13.45000,-39.08333,Approximate (to the min),Oil Palm,plantation,Agriculture,23,0.30,,34.3,,,
+35,LAF1,LA1FbA,Opalma Farm,Bahia State, Brazil,-13.45000,-39.08333,Approximate (to the min),Oil Palm,plantation,Agriculture,34,0.30,,61.1,,,
+35,LAF1,LAF1N,Opalma Farm,Bahia State, Brazil,-13.45000,-39.08333,Approximate (to the min),Atlantic rain forest,forest,Native,,0.30,22.2,48.5,,48.5,0.30
+56,MA1,MA1A,"Ihe, Awgu",Nigeria,Nigeria,6.500011,7.083373,exact,cassava/maize/veges,cropping,Agriculture,,0.30,11.5,33.1,,,
+56,MA1,MA1N,"Ihe, Awgu",Nigeria,Nigeria,6.50282,7.249384,exact,forest,forest,Native,,0.30,39.2,113.5,,,
+56,MA2,MA2A,"Ihe, Awgu",Nigeria,Nigeria,6.431488,7.55972,approximate,cassava/yam/pulses,cropping,Agriculture,,0.30,8.1,23.9,,,
+56,MA2,MA2N,"Ihe, Awgu",Nigeria,Nigeria,6.433294,7.561271,approximate,forest,forest,Native,,0.30,37.5,106.8,,,
+12,MBD1,MBD1A,Funk's Grove,Illinois, USA,40.37817,-89.04800,Exact,Soybean/Corn Conventional Till,cropping,Agriculture,>100,0.20,30.9,,,61.8,0.20
+12,MBD1,MBD1N,Funk's Grove,Illinois, USA,40.37817,-89.04800,Exact,Grass,grassland,Native,,0.20,38.5,,,76.9,0.20
+12,MBD2,MBD2A,Walace,Illinois, USA,41.36933,-88.86933,Exact,Soybean/Corn Conventional Till,cropping,Agriculture,>100,1.00,37.3,90.3,149.5,,
+12,MBD2,MBD2N,Walace,Illinois, USA,41.36933,-88.86933,Exact,Grass,grassland,Native,,1.00,49.6,118.6,175.0,,
+12,MBD3,MBD3A,Waldo,Illinois, USA,40.78367,-88.87517,Exact,Soybean/Corn Conventional Till,cropping,Agriculture,>100,1.00,38.7,99.5,196.7,,
+12,MBD3,MBD3N,Waldo,Illinois, USA,40.78367,-88.87517,Exact,Grass,grassland,Native,,1.00,69.4,165.2,265.1,,
+12,MBD4,MBD4A,Paxton,Illinois, USA,40.44483,-88.09733,Exact,Soybean/Corn Conventional Till,cropping,Agriculture,>100,1.00,23.5,60.7,134.0,,
+12,MBD4,MBD4N,Paxton,Illinois, USA,40.44483,-88.09733,Exact,Prairie,grassland,Native,,1.00,49.2,126.5,225.0,,
+12,MBD5,MBD5A,Loda,Illinois, USA,40.52717,-88.07483,Exact,Soybean/Corn Conventional Till,cropping,Agriculture,>100,1.00,40.9,102.2,195.7,,
+12,MBD5,MBD5N,Loda,Illinois, USA,40.52717,-88.07483,Exact,Prairie,grassland,Native,,1.00,55.7,147.6,272.9,,
+12,MBD6,MBD6A,Weston,Illinois, USA,40.74667,-88.61333,Exact,Soybean/Corn Conventional Till,cropping,Agriculture,>100,1.00,40.4,101.6,191.9,,
+12,MBD6,MBD6N,Weston,Illinois, USA,40.74667,-88.61333,Exact,Prairie,grassland,Native,,1.00,50.7,131.5,253.8,,
+17,ML1,ML1A,Cool Montane woodland thicket,Oromia, Ethiopia,7.43340,38.97430,Approximate (estimated via map),,cropping,Agriculture,22,0.20,45.8,,,83.7,0.20
+17,ML1,ML1N,Cool Montane woodland thicket,Oromia, Ethiopia,7.43340,38.97430,Approximate (estimated via map),Montane woodland thickets,savanna,Native,,0.60,47.8,95.6,,153.7,0.60
+17,ML2,ML2A,Humid P. falcatus forest,Oromia, Ethiopia,7.40180,38.92210,Approximate (estimated via map),,cropping,Agriculture,20,0.20,45.0,,,63.5,0.20
+17,ML2,ML2N,Humid P. falcatus forest,Oromia, Ethiopia,7.40180,38.92210,Approximate (estimated via map),P. falcatus Forest,forest,Native,,0.60,45.5,162.9,,234.6,0.60
+17,ML3,ML3A,Sub-humidPodocarpus–Croton mixed forest,Oromia, Ethiopia,7.39750,38.87400,Approximate (estimated via map),,cropping,Agriculture,20,0.20,40.2,,,43.5,0.20
+17,ML3,ML3N,Sub-humidPodocarpus–Croton mixed forest,Oromia, Ethiopia,7.39750,38.87400,Approximate (estimated via map),Podocarpus–Crotonmixed forest,forest,Native,,0.60,47.9,89.1,,133.6,0.60
+17,ML4,ML4A,Dry transitional woodland,Oromia, Ethiopia,7.43800,38.81700,Approximate (estimated via map),,forest,Agriculture,11,0.20,24.0,,,37.9,0.20
+17,ML4,ML4N,Dry transitional woodland,Oromia, Ethiopia,7.43800,38.81700,Approximate (estimated via map),Dry transitional woodland,savanna,Native,,0.60,38.7,72.7,,97.5,0.60
+17,ML5,ML5A,Semiarid Acacia woodland,Oromia, Ethiopia,7.56270,38.78660,Approximate (estimated via map),,forest,Agriculture,15,0.20,20.8,,,33.7,0.20
+17,ML5,ML5N,Semiarid Acacia woodland,Oromia, Ethiopia,7.51210,38.79230,Approximate (estimated via map),Acacia woodland,savanna,Native,,0.60,18.5,31.7,,40.3,0.60
+11,MUK1,MUK1A,Mugla View,Queensland, Australia,-27.98972,148.54991,Approximate,Wheat,cropping,Agriculture,36,1.00,9.0,21.6,42.6,,
+11,MUK1,MUK1PA,Mugla View,Queensland, Australia,-27.98848,148.53721,Approximate,Pasture (imroved),grazing,Agriculture,36,1.00,9.8,23.2,44.7,,
+11,MUK1,MUK1N,Mugla View,Queensland, Australia,-27.98333,148.55000,Approximate,Mulga,savanna,Native,,1.00,11.6,25.2,46.4,,
+13,NF1,NF1aA,"Riesel, TX",Texas, USA,31.48103,-96.88242,exact,Corn/Oats,cropping,Agriculture,,1.00,26.9,68.5,160.1,,
+13,NF1,NF1bA,"Riesel, TX",Texas, USA,31.48103,-96.88242,exact,Corn/Oats,cropping,Agriculture,,1.00,21.2,51.3,127.3,,
+13,NF1,NFbN,"Mysenski, TX",Texas, USA,31.46352,-96.85260,exact,Prairie,grassland,Native,,1.00,49.7,117.0,244.5,,
+13,NF1,NF1aN,"Merz, TX",Texas, USA,30.88307,-97.47188,exact,Prairie Restored,grassland,Restored,16,1.00,34.0,79.5,172.1,,
+13,NF1,NFc1N,"Mysenski, TX",Texas, USA,31.46352,-96.85260,exact,Prairie Restored,grassland,Restored,13,1.00,22.3,52.3,116.9,,
+13,NF1,NF1dN,"Riesel, TX",Texas, USA,31.48103,-96.88242,exact,Prairie Restored,grassland,Restored,60,1.00,37.0,89.9,160.2,,
+13,NF10,NF10N,"Fricke Cemetery, NE",Nebraska, USA,40.15192,-95.53992,exact,Prairie,grassland,Native,,1.00,74.7,126.6,229.8,,
+13,NF11,NF11N,"Walnut Creek, NE",Nebraska, USA,40.16278,-96.52688,exact,Prairie,grassland,Native,,1.00,71.9,125.6,209.5,,
+13,NF12,NF12N,"Little Tarkio, MO",Montana, USA,40.20158,-95.31428,exact,Prairie,grassland,Native,,1.00,81.8,141.6,251.5,,
+13,NF13,NF13N,"Wolters, NE",Nebraska, USA,40.25440,-96.17700,exact,Prairie,grassland,Native,,1.00,70.5,122.8,203.6,,
+13,NF14,NF14N,"Helton, MO",Montana, USA,40.25635,-93.83330,exact,Prairie,grassland,Native,,0.80,70.9,133.9,,204.3,0.80
+13,NF15,NF15N,"Morris, MO",Montana, USA,40.38292,-92.94063,exact,Prairie,grassland,Native,,0.80,26.9,48.5,,84.6,0.80
+13,NF16,NF16N,"Tarkio, MO",Montana, USA,40.50217,-95.21173,exact,Prairie,grassland,Native,,0.80,91.8,142.2,,194.7,0.80
+13,NF17,NF17N,"Spring Creek, NE",Nebraska, USA,40.68530,-96.85518,exact,Prairie,grassland,Native,,1.00,42.5,89.1,142.6,,
+13,NF18,NF18N,"Nine Mile, NE",Nebraska, USA,40.86893,-96.80642,exact,Prairie,grassland,Native,,1.00,80.2,125.1,190.5,,
+13,NF19,NF19aA,"NSWR,IA",Iowa, USA,41.58030,-93.26322,exact,Crop,cropping,Agriculture,,1.00,33.0,81.6,146.7,,
+13,NF19,NF19bA,"CERA, IA",Iowa, USA,41.67893,-92.87273,exact,Crop,cropping,Agriculture,,1.00,33.1,79.8,151.3,,
+13,NF19,NF19aN,"Rolling Thunder, IA",Iowa, USA,41.20060,-93.65492,exact,Prairie,grassland,Native,,1.00,42.1,94.8,162.6,,
+13,NF19,NF19bN,"NSWR,IA",Iowa, USA,41.58798,-93.27010,exact,Prairie Restored,grassland,Restored,5,1.00,24.2,66.7,210.8,,
+13,NF19,NF19cN,"CERA, IA",Iowa, USA,41.68548,-92.86197,exact,Prairie Restored,grassland,Restored,30,1.00,26.9,52.6,96.1,,
+13,NF19,NF19dN,"CERA, IA",Iowa, USA,41.68625,-92.87238,exact,Prairie Restored,grassland,Restored,36,1.00,27.0,58.8,109.8,,
+13,NF19,NF19eN,"CERA, IA",Iowa, USA,41.68757,-92.87238,exact,Prairie Restored,grassland,Restored,18,1.00,35.7,95.0,193.7,,
+13,NF2,NF2N,"Riesel, TX",Texas, USA,31.48103,-96.88242,exact,Prairie ,grassland,Native,,1.00,77.6,129.9,245.7,,
+13,NF20,NF20N,"Dinesen, IA",Iowa, USA,41.70887,-95.28100,exact,Prairie,grassland,Native,,1.00,32.8,91.5,192.8,,
+13,NF21,NF21N,"Pokomy, NE",Nebraska, USA,41.60792,-97.10922,exact,Prairie,grassland,Native,,1.00,87.2,151.3,281.0,,
+13,NF22,NF22N,"Friberg, NE",Nebraska, USA,41.95573,-97.26572,exact,Prairie,grassland,Native,,1.00,66.0,98.7,138.7,,
+13,NF23,NF23A,"Kurtz, IA",Iowa, USA,42.12845,-93.21298,exact,Crop,cropping,Agriculture,,1.00,28.7,63.0,103.4,,
+13,NF23,NF23eN,"Doolittle, IA",Iowa, USA,42.14260,-93.58655,exact,Prairie,grassland,Native,,1.00,52.4,128.7,239.8,,
+13,NF23,NF23aN,"Kurtz, IA",Iowa, USA,41.68757,-92.87238,exact,Prairie Restored,grassland,Restored,29,1.00,32.2,75.5,144.7,,
+13,NF23,NF23bN,"Kurtz, IA",Iowa, USA,42.12397,-93.21167,exact,Prairie Restored,grassland,Restored,17,1.00,30.4,65.4,117.7,,
+13,NF23,NF23cN,"Kurtz, IA",Iowa, USA,42.12785,-93.21008,exact,Prairie Restored,grassland,Restored,10,1.00,30.6,69.0,117.3,,
+13,NF24,NF24N,"Doolittle, IA",Iowa, USA,42.15007,-93.58852,exact,Prairie,grassland,Native,,1.00,114.1,192.7,306.0,,
+13,NF25,NF25N,"Kalsow, IA",Iowa, USA,42.56882,-94.56068,exact,Prairie,grassland,Native,,1.00,94.9,180.3,323.3,,
+13,NF26,NF26N ,"Powder Creek, NE",Nebraska, USA,42.57718,-96.83795,exact,Prairie,grassland,Native,,1.00,36.8,88.3,157.8,,
+13,NF27,NF27N,"Steele, IA",Iowa, USA,42.88005,-95.57888,exact,Prairie,grassland,Native,,1.00,101.7,172.5,294.8,,
+13,NF28,NF28N,"Vermillion, SD",South Dakota, USA,42.91995,-97.09358,exact,Prairie,grassland,Native,,1.00,86.3,133.2,186.6,,
+13,NF29,NF29N,"Stinson, IA",Iowa, USA,43.04708,-94.32680,exact,Prairie,grassland,Native,,1.00,96.7,170.0,278.3,,
+13,NF3,NF3N,"Cylmer,TX",Texas, USA,33.30868,-96.22743,exact,Prairie ,grassland,Native,,1.00,74.0,127.1,234.0,,
+13,NF30,NF30N,"Hayden,IA",Iowa, USA,43.44162,-92.38378,exact,Prairie,grassland,Native,,1.00,51.1,119.3,198.9,,
+13,NF31,NF31N,"Osmundon, MN",Minnesota, USA,43.51035,-93.65218,exact,Prairie,grassland,Native,,1.00,35.9,91.8,159.0,,
+13,NF32,NF32N,"Makoce Washte, SD",South Dakota, USA,43.55395,-96.96923,exact,Prairie,grassland,Native,,1.00,95.5,156.1,222.3,,
+13,NF33,NF33N,"Iorn Horse, MN",Minnesota, USA,43.87060,-92.84935,exact,Prairie,grassland,Native,,1.00,76.7,155.1,232.6,,
+13,NF34,NF34N,"Sioux Prairie, SD",South Dakota, USA,44.03548,-96.78002,exact,Prairie,grassland,Native,,1.00,104.4,166.0,232.0,,
+13,NF35,NF35N,"Prairie Coteau, MN",Minnesota, USA,44.11547,-96.15158,exact,Prairie,grassland,Native,,1.00,46.1,103.1,176.2,,
+13,NF36,NF36N,"Glynn Prairie, MN",Minnesota, USA,44.26433,-95.69665,exact,Prairie,grassland,Native,,1.00,98.2,182.3,311.2,,
+13,NF37,NF37N,"Crystal Springs, SD",South Dakota, USA,44.79567,-96.57025,exact,Prairie,grassland,Native,,1.00,49.4,112.1,185.1,,
+13,NF38,NF38N,"Altamount, SD",South Dakota, USA,44.88703,-96.53505,exact,Prairie,grassland,Native,,1.00,106.8,153.6,253.4,,
+13,NF39,NF39N,"Clinton, MN",Minnesota, USA,45.45785,-96.55903,exact,Prairie,grassland,Native,,1.00,112.7,184.3,272.7,,
+13,NF4,NF4N,"Pontotoc, OK",Oklahoma, USA,34.51062,-96.59997,exact,Prairie ,grassland,Native,,1.00,63.7,113.5,210.1,,
+13,NF40,NF40N,"Miller Prarie, MN",Minnesota, USA,45.77300,-96.31670,exact,Prairie,grassland,Native,,1.00,47.5,97.8,169.0,,
+13,NF41,NF41aA,"Jorgenson, MN",Minnesota, USA,46.17365,-96.20003,exact,Corn/Soybean,cropping,Agriculture,,1.00,44.0,108.5,187.8,,
+13,NF41,NF41bA,"Weigers, MN",Minnesota, USA,46.35545,-96.12748,exact,Corn/Soybean,cropping,Agriculture,,1.00,36.7,78.0,119.0,,
+13,NF41,NF41fN,"Townsend, MN",Minnesota, USA,46.25482,-96.06513,exact,Prairie,grassland,Native,,1.00,40.3,93.1,148.5,,
+13,NF41,NF41aN,"Stonybrook, MN",Minnesota, USA,46.09590,-96.12143,exact,Prairie Restored,grassland,Restored,10,1.00,39.5,89.2,143.0,,
+13,NF41,NF41bN,"Preus, MN",Minnesota, USA,46.09950,-96.03747,exact,Prairie Restored,grassland,Restored,8,0.80,39.9,96.1,,146.4,0.80
+13,NF41,NF41cN,"Preus, MN",Minnesota, USA,46.10022,-96.03768,exact,Prairie Restored,grassland,Restored,25,0.80,44.8,111.7,,183.2,0.80
+13,NF41,NF41dN,"Jorgenson, MN",Minnesota, USA,46.17407,-96.20003,exact,Prairie Restored,grassland,Restored,3,0.80,34.9,90.7,,151.5,0.80
+13,NF41,NF41eN,"Ridgeway, MN",Minnesota, USA,46.24810,-96.22538,exact,Prairie Restored,grassland,Restored,3,0.80,49.3,116.4,,195.3,0.80
+13,NF41,NF41gN,"Townsend, MN",Minnesota, USA,46.25798,-96.07013,exact,Prairie Restored,grassland,Restored,5,1.00,25.5,51.1,83.2,,
+13,NF41,NF41hN,"Weigers, MN",Minnesota, USA,46.34903,-96.12542,exact,Prairie Restored,grassland,Restored,20,1.00,86.6,147.0,209.5,,
+13,NF41,NF42iN,"Weigers, MN",Minnesota, USA,46.35327,-96.11878,exact,Prairie Restored,grassland,Restored,27,1.00,33.8,97.0,155.1,,
+13,NF42,NF42N,"Fabian, MN",Minnesota, USA,46.10928,-96.13018,exact,Prairie,grassland,Native,,1.00,47.8,94.2,139.7,,
+13,NF43,NF43N,"Brown Ranch, ND",North Dakota, USA,46.39797,-97.35578,exact,Prairie,grassland,Native,,0.80,16.4,36.5,,61.3,0.80
+13,NF44,NF44N,"Bluestem, MN",Minnesota, USA,46.85605,-96.47263,exact,Prairie,grassland,Native,,1.00,24.9,49.9,97.4,,
+13,NF45,NF45N,"Felton, MN",Minnesota, USA,47.05148,-96.42690,exact,Prairie,grassland,Native,,0.80,47.9,89.7,,113.0,0.80
+13,NF46,NF46N,"Twin Valley, MN",Minnesota, USA,47.18823,-96.36335,exact,Prairie,grassland,Native,,0.80,64.7,120.4,,147.3,0.80
+13,NF47,NF47N,"Walmberg, MN",Minnesota, USA,47.73122,-96.82325,exact,Prairie,grassland,Native,,0.80,63.3,132.4,,178.3,0.80
+13,NF48,NF48N,"Wallace Dayton, MN",Minnesota, USA,48.97835,-96.49415,exact,Prairie,grassland,Native,,0.80,59.6,89.1,,108.2,0.80
+13,NF5,NF5aN,"Witchita Mtn, OK",Oklahoma, USA,34.75217,-96.57933,exact,Prairie,grassland,Native,,1.00,39.9,89.0,178.7,,
+13,NF5,NF5bN,"Witchita Mtn, OK",Oklahoma, USA,34.75217,-96.57933,exact,Woodland,forest,Native,,1.00,50.4,98.5,203.4,,
+13,NF6,NF6N,"White Oak, OK",Oklahoma, USA,36.62067,-95.27402,exact,Prairie ,grassland,Native,,1.00,77.8,120.4,187.2,,
+13,NF7,NF7N,"Welda,KS",Kansas, USA,38.18208,-95.26980,exact,Prairie ,grassland,Native,,0.80,76.3,137.7,,200.4,0.80
+13,NF8,NF8aA,"Malone, KS",Kansas, USA,39.03268,-95.22468,exact,Crop,cropping,Agriculture,,1.00,33.2,78.8,139.6,,
+13,NF8,NF8bA,"Hagenbuch,KS",Kansas, USA,39.03268,-95.18135,exact,Crop,cropping,Agriculture,,1.00,28.5,63.7,110.3,,
+13,NF8,NF8aN,"Rockefeller, KS",Kansas, USA,39.04450,-95.20362,exact,Woodlot,forest,Native,,1.00,34.1,69.3,233.5,,
+13,NF8,NF8bN,"Rockefeller, KS",Kansas, USA,39.04503,-95.20502,exact,Prairie,grassland,Native,,1.00,48.9,108.6,179.5,,
+13,NF8,NF8cN,"Rockefeller, KS",Kansas, USA,39.05545,-95.22468,exact,Prairie Restored,grassland,Restored,50,1.00,30.0,66.7,117.4,,
+13,NF8,NF8dN,"Wiggins, KS",Kansas, USA,39.04710,-95.20615,exact,Prairie Restored,grassland,Restored,18,1.00,30.7,77.8,177.3,,
+13,NF9,NF9N,"New Garden, MO",Montana, USA,39.85333,-93.34602,exact,Prairie,grassland,Native,,0.80,80.5,130.0,,187.1,0.80
+53,NH1,NH1aA,Site C,Inner Mongolia, China,43.51667,116.95000,Approximate( to the min),Crop,cropping,Agriculture,39,1.00,30.0,68.0,145.8,,
+53,NH1,NH1bA,Site C,Inner Mongolia, China,43.51667,116.95000,Approximate( to the min),Crop,cropping,Agriculture,51,1.00,18.8,54.4,138.6,,
+53,NH1,NH1N,Site C,Inner Mongolia, China,43.51667,116.95000,Approximate( to the min),Grassland (mowed once a year- no pasture),grassland,Native,,1.00,24.0,64.7,152.2,,
+53,NH2,NH2aA,Site D,Inner Mongolia, China,43.48333,116.81667,Approximate( to the min),Crop,cropping,Agriculture,19,1.00,19.9,56.4,146.2,,
+53,NH2,NH2bA,Site D,Inner Mongolia, China,43.48333,116.81667,Approximate( to the min),Crop,cropping,Agriculture,39,1.00,18.3,52.6,141.6,,
+53,NH2,NH2N,Site D,Inner Mongolia, China,43.48333,116.81667,Approximate( to the min),Grassland (mowed once a year- no pasture),grassland,Native,,1.00,29.7,73.1,161.9,,
+10,OG1,OG1A,Annual Cropping,Kabarole District, Uganda,0.361292,30.423111,Approximate,Maize,cropping,Agriculture,,0.60,6.1,12.9,,16.4,0.60
+10,OG1,OG1N,Intact Forest,Kabarole District, Uganda,0.0464833,30.403948,Approximate,Tropical High Forest,forest,Native,,0.60,3.4,9.4,,13.3,0.60
+10,OG1,OG1RN,Restored Forest,Kabarole District, Uganda,0.0403633,30.334675,Approximate,Tropical High Forest,forest,Restored,,0.60,3.0,8.1,,13.5,0.60
+26,PC1,PC1aA,Montane Forest,Alfaro Ruiz, Costa Rica,10.18333,-84.40000,Approximate (to the min),Coffee,plantation,Agriculture,>50,1.00,31.6,108.0,189.6,,
+26,PC1,PC1bA,Montane Forest,Alfaro Ruiz, Costa Rica,10.18333,-84.40000,Approximate (to the min),Conventional Farming - vegetables,cropping,Agriculture,>50,1.00,27.1,89.9,209.5,,
+26,PC1,PC1cA,Montane Forest,Alfaro Ruiz, Costa Rica,10.18333,-84.40000,Approximate (to the min),Organic Farming -Veg,cropping,Agriculture,>50,1.00,34.9,91.4,213.6,,
+26,PC1,PC1N,Montane Forest,Alfaro Ruiz, Costa Rica,10.18333,-84.40000,Approximate (to the min),Wet Forest,forest,Native,,1.00,42.0,92.8,227.2,,
+26,PC2,PC2aA,Isthmian-Atlantic Moist Forest,Mercedes, Costa Rica,10.16667,-83.61667,Approximate (to the min),Bannana,plantation,Agriculture,>50,1.00,27.3,72.0,150.3,,
+26,PC2,PC2bA,Isthmian-Atlantic Moist Forest,Mercedes, Costa Rica,10.16667,-83.61667,Approximate (to the min),Oil Palm,plantation,Agriculture,>74,1.00,24.0,52.7,132.2,,
+26,PC2,PC2cA,Isthmian-Atlantic Moist Forest,Mercedes, Costa Rica,10.16667,-83.61667,Approximate (to the min),Pineapple ,cropping,Agriculture,>50,1.00,12.3,39.5,113.6,,
+26,PC2,PC2N,Isthmian-Atlantic Moist Forest,Mercedes, Costa Rica,10.16667,-83.61667,Approximate (to the min),Rainforest,forest,Native,,1.00,24.4,59.6,150.2,,
+26,PC3,PC3aA,Pacific Dry Forest,Guanacaste, Costa Rica,10.58333,-85.53333,Approximate (to the min),Sugarcane,cropping,Agriculture,>50,1.00,21.9,81.6,150.4,,
+26,PC3,PC3bA,Pacific Dry Forest,Guanacaste, Costa Rica,10.58333,-85.53333,Approximate (to the min),Mango,plantation,Agriculture,>50,1.00,30.4,53.1,85.6,,
+26,PC3,PC3cA,Pacific Dry Forest,Guanacaste, Costa Rica,10.58333,-85.53333,Approximate (to the min),Pasture,grazing,Agriculture,>50,1.00,20.2,32.6,75.9,,
+26,PC3,PC3N,Pacific Dry Forest,Guanacaste, Costa Rica,10.58333,-85.53333,Approximate (to the min),Dryforest,forest,Native,,1.00,36.7,86.5,164.5,,
+50,RC1,RC1A,“Parco Regionale del Ticino,Novara, Italy,45.20150,9.06104,Exact,Plantation : poplar,plantation,Agriculture,">300 Plantation for 100 years, corn and rice started in 1700's",1.00,13.3,26.9,93.4,,
+50,RC1,RC1N,Riserva Integrale Bosco Siro Negri,Novara, Italy,45.21060,9.05775,Exact,Forest:Padanian–Illyrian hardwood,forest,Native,untouched for over 200 y. previously used as noble hunting land,1.00,33.7,67.7,190.5,,
+14,RM1,RM1A,"Fermilab, Batavia, Illinois",Illinois, USA,41.84167,-88.24167,Approximate,Corn/Soybean,cropping,Agriculture,40,1.00,30.4,99.7,162.5,,
+14,RM1,RM1N,"Fermilab, Batavia, Illinois",Illinois, USA,41.84167,-88.24167,Approximate,Prairie,grassland,Native,,1.00,56.7,156.3,224.9,,
+14,RM2,RM2A,"Fermilab, Batavia, Illinois",Illinois, USA,41.84167,-88.24167,Approximate,Corn/Soybean,cropping,Agriculture,40,1.00,33.0,110.7,178.0,,
+14,RM2,RM2N,"Fermilab, Batavia, Illinois",Illinois, USA,41.84167,-88.24167,Approximate,Prairie,grassland,Native,,1.00,50.9,138.1,193.1,,
+40,SB1,SB1LA1PA,Luquillo Experimental Forest,,Puerto Rico,18.35000,-65.91667,Approximate (to the min),Pasture,grazing,Agriculture,>50,0.50,29.2,81.5,,115.2,0.50
+40,SB1,SB1LF2A,Luquillo Experimental Forest,,Puerto Rico,18.35000,-65.91667,Approximate (to the min),Mahogany,plantation,Agriculture,19,0.50,25.8,67.6,,79.5,0.50
+40,SB1,SB1LF6A,Luquillo Experimental Forest,,Puerto Rico,18.35000,-65.91667,Approximate (to the min),Mahogany,plantation,Agriculture,51,0.50,35.6,95.8,,123.6,0.50
+40,SB1,SB1LF1N,Luquillo Experimental Forest,,Puerto Rico,18.35000,-65.91667,Approximate (to the min),Tropical Wet Forest,forest,Native,,0.50,36.3,100.7,,140.6,0.50
+40,SB1,SB1LF3N,Luquillo Experimental Forest,,Puerto Rico,18.35000,-65.91667,Approximate (to the min),Forest,forest,Restored,"20-25, no data for agricultural use",0.50,29.2,77.7,,97.0,0.50
+40,SB1,SB1LF4N,Luquillo Experimental Forest,,Puerto Rico,18.35000,-65.91667,Approximate (to the min),Forest,forest,Restored,"40, no data for agricultural use",0.50,32.0,87.4,,117.6,0.50
+40,SB1,SB1LF5N,Luquillo Experimental Forest,,Puerto Rico,18.35000,-65.91667,Approximate (to the min),Forest,forest,Restored,"38-47, no data for agricultural use",0.50,36.3,99.5,,134.4,0.50
+40,SB2,SB2CF2A,Carite State Forest,,Puerto Rico,18.08333,-66.06667,Approximate (to the min),Pine ,plantation,Agriculture,10,0.50,29.0,77.5,,98.1,0.50
+40,SB2,SB2CA1A,Carite State Forest,,Puerto Rico,18.08333,-66.06667,Approximate (to the min),Crops,cropping,Agriculture,0.6,0.50,26.6,73.3,,100.6,0.50
+40,SB2,SB2CA2A,Carite State Forest,,Puerto Rico,18.08333,-66.06667,Approximate (to the min),Crops,cropping,Agriculture,10,0.50,15.6,45.4,,71.0,0.50
+40,SB2,SB2CA3A,Carite State Forest,,Puerto Rico,18.08333,-66.06667,Approximate (to the min),Crops/pasture,cropping,Agriculture,10,0.50,17.7,47.1,,58.7,0.50
+40,SB2,SB2CA4PA,Carite State Forest,,Puerto Rico,18.08333,-66.06667,Approximate (to the min),Pasture,grazing,Agriculture,>50,0.50,27.0,73.6,,98.6,0.50
+40,SB2,SB2CF1N,Carite State Forest,,Puerto Rico,18.08333,-66.06667,Approximate (to the min),Tropical Wet Forest,forest,Native,,0.50,43.9,121.9,,170.8,0.50
+40,SB3,Sb3GF4N, Guanica State Forest,,Puerto Rico,17.96667,-66.86667,Approximate (to the min),Mahogany,plantation,Agriculture,50,0.25,39.8,,,99.5,0.25
+40,SB3,SB3GA1A, Guanica State Forest,,Puerto Rico,17.96667,-66.86667,Approximate (to the min),Pasture/ Crop,cropping,Agriculture,60,0.25,20.6,,,51.6,0.25
+40,SB3,SB3GA2A, Guanica State Forest,,Puerto Rico,17.96667,-66.86667,Approximate (to the min),Crops,cropping,Agriculture,60,0.25,20.1,,,50.2,0.25
+40,SB3,SB3GA3PA, Guanica State Forest,,Puerto Rico,17.96667,-66.86667,Approximate (to the min),Pasture,grazing,Agriculture,>60,0.25,31.0,,,77.5,0.25
+40,SB3,SB3GF1aN, Guanica State Forest,,Puerto Rico,17.96667,-66.86667,Approximate (to the min),Subtropical dry Forest,forest,Native,,0.25,25.2,,,62.9,0.25
+40,SB3,SB3GF1bN, Guanica State Forest,,Puerto Rico,17.96667,-66.86667,Approximate (to the min),Subtropical dry Forest,forest,Native,,0.25,19.6,,,49.0,0.25
+40,SB3,SB3GF2N, Guanica State Forest,,Puerto Rico,17.96667,-66.86667,Approximate (to the min),Subtropical dry Forest,forest,Restored,11,0.25,25.0,,,62.5,0.25
+40,SB3,SB3GF3N, Guanica State Forest,,Puerto Rico,17.96667,-66.86667,Approximate (to the min),Subtropical dry Forest,forest,Restored,35,0.25,34.5,,,86.2,0.25
+4,SGB1,SGB1CROPA,Gage ; Saline counties,Nebraska, USA,,,,Corn,cropping,Agriculture,>30,0.10,17.0,,,,
+4,SGB1,SGB1PrairieN,Gage ;Saline counties,Nebraska, USA,,,,C4 prairie,grassland,Native,,0.10,31.0,,,,
+4,SGB1,SGB1RestoredN,Gage ; Saline counties,Nebraska, USA,,,,C4 Restored,grassland,Restored,18,0.10,20.4,,,,
+4,SGB2,SGB2CROPA,Stanton;Madison; Peirce Counties,Nebraska, USA,,,,Corn,cropping,Agriculture,>30,0.10,87.5,,,,
+4,SGB2,SGB2PRAIRIEN,Stanton;Madison; Peirce Counties,Nebraska, USA,,,,C4 prairie,grassland,Native,,0.10,189.6,,,,
+4,SGB2,SGB2RESTOREDN,Stanton;Madison; Peirce Counties,Nebraska, USA,,,,C4 Restored,grassland,Restored,18,0.10,92.4,,,,
+32,SK1,SK1aA,Delatite,Victoria, Australia,-37.15000,145.96667,Approximate (to the min),Pine ,plantation,Agriculture,36,0.10,18.2,,,,
+32,SK1,SK1bA,Delatite,Victoria, Australia,-37.15000,145.96667,Approximate (to the min),Pine ,plantation,Agriculture,"42, ~160 y of agriculture",0.10,15.3,,,,
+32,SK1,SK1cA,Delatite,Victoria, Australia,-37.15000,145.96667,Approximate (to the min),Pine ,plantation,Agriculture,"7, ~160 y of agriculture",0.10,14.3,,,,
+32,SK1,SK1aN,Delatite,Victoria, Australia,-37.15000,145.96667,Approximate (to the min),Eucalyptus,forest,Native,,0.10,26.6,,,,
+32,SK1,SK1bN,Delatite,Victoria, Australia,-37.15000,145.96667,Approximate (to the min),Eucalyptus,forest,Restored,"47 ya restored, farmed 113 y",0.10,10.6,,,,
+32,SK2,SK2aA,Kosciuszko,New South Wales, Australia,-35.61667,148.43333,Approximate (to the min),Pine ,plantation,Agriculture,75,0.10,65.3,,,,
+32,SK2,SK2aN,Kosciuszko,New South Wales, Australia,-35.61667,148.43333,Approximate (to the min),Eucalyptus,forest,Native,,0.10,67.1,,,,
+32,SK2,SK2bN,Kosciuszko,New South Wales, Australia,-35.61667,148.43333,Approximate (to the min),Eucalyptus,forest,Restored,"12 ya, farmed 49 years",0.10,44.1,,,,
+32,SK3,SK3A,Namadgi,Australian Capital Territory, Australia,-35.75000,148.93333,Approximate (to the min),Pine ,plantation,Agriculture,"34,  ~160 y of agriculture",0.10,18.9,,,,
+32,SK3,SK3aN,Namadgi,Australian Capital Territory, Australia,-35.75000,148.93333,Approximate (to the min),Eucalyptus,forest,Native,,0.10,22.4,,,,
+32,SK3,SK3bN,Namadgi,Australian Capital Territory, Australia,-35.75000,148.93333,Approximate (to the min),Eucalyptus,forest,Restored,"7 ya, ~153 y of agriculture",0.10,21.4,,,,
+46,SO1,SO1aA,Amborawang,Province of East Kalimantan, Indonesia,-1.06667,116.93333,Exact,"Logging until 1970,Slash and Burn Crops until 1990's, Now Frequent fires every 2 years on Grassland",cropping,Agriculture,>30,1.00,18.7,36.5,67.6,,
+46,SO1,SO1bA,Batuah ,Province of East Kalimantan, Indonesia,-0.70000,117.08333,Exact,"Logging until 1970,Slash and Burn Crops until 1990's, Now Frequent fires every 2 years on Grassland",cropping,Agriculture,>30,1.00,16.8,36.9,70.1,,
+46,SO1,SO1N,Bukit Soeharto Educational Forest,Province of East Kalimantan, Indonesia,-0.83333,117.16667,Exact,Lowland tropical rain forest,forest,Native,,1.00,16.0,29.9,55.0,,
+44,SP1,SP1PA,Tazones,Esmeraldas, Ecuador,0.72067,-79.83483,Approximate (to the centisecond),"Pasture (Improved, 40 differant species were found. Native forest was burned)",grazing,Agriculture,35,0.10,26.3,,,,
+44,SP1,SP1aN,Tazones,Esmeraldas, Ecuador,0.72067,-79.83483,Approximate (to the centisecond),Forest,forest,Native,,0.10,29.6,,,,
+44,SP1,SP1bA,Tazones,Esmeraldas, Ecuador,0.72067,-79.83483,Approximate (to the centisecond),Forest,forest,Restored,"14, 21 yr pasture",0.10,25.8,,,,
+44,SP2,SP2PA,Penas,Esmeraldas, Ecuador,1.07283,-79.13483,Approximate (to the centisecond),"Pasture (Improved, 40 differant species were found. Native forest was burned)",grazing,Agriculture,30,0.10,27.8,,,,
+44,SP2,SP2aN,Penas,Esmeraldas, Ecuador,1.07283,-79.13483,Approximate (to the centisecond),Forest,forest,Native,,0.10,28.7,,,,
+44,SP2,SP2bN,Penas,Esmeraldas, Ecuador,1.07283,-79.13483,Approximate (to the centisecond),Forest,forest,Restored,"10, 20 yr pasture",0.10,32.0,,,,
+44,SP3,SP3PA,Chonta duro,Esmeraldas, Ecuador,0.92100,-79.42167,Approximate (to the centisecond),"Pasture (Improved, 40 differant species were found. Native forest was burned)",grazing,Agriculture,35,0.10,30.7,,,,
+44,SP3,SP3aN,Chonta duro,Esmeraldas, Ecuador,0.92100,-79.42167,Approximate (to the centisecond),Forest,forest,Native,,0.10,31.2,,,,
+44,SP3,SP3bN,Chonta duro,Esmeraldas, Ecuador,0.92100,-79.42167,Approximate (to the centisecond),Forest,forest,Restored,"17, 20 yr pasture",0.10,29.2,,,,
+44,SP4,SP4PA,Minas,Esmeraldas, Ecuador,0.86433,-79.57067,Approximate (to the centisecond),"Pasture (Improved, 40 differant species were found. Native forest was burned)",grazing,Agriculture,33,0.10,37.4,,,,
+44,SP4,SP4aN,Minas,Esmeraldas, Ecuador,0.86433,-79.57067,Approximate (to the centisecond),Forest,forest,Native,,0.10,34.2,,,,
+44,SP4,SP4bN,Minas,Esmeraldas, Ecuador,0.86433,-79.57067,Approximate (to the centisecond),Forest,forest,Restored,"10, 20 yr pasture",0.10,38.1,,,,
+44,SP5,SP5PA,Mindo,Districto Metropolitano de Quito, Ecuador,0.02417,-78.76933,Approximate (to the centisecond),"Pasture (Improved, 40 differant species were found. Native forest was burned)",grazing,Agriculture,20,0.10,49.0,,,,
+44,SP5,SP5aN,Mindo,Districto Metropolitano de Quito, Ecuador,0.02417,-78.76933,Approximate (to the centisecond),Forest,forest,Native,,0.10,35.5,,,,
+44,SP5,SP5bN,Mindo,Districto Metropolitano de Quito, Ecuador,0.02417,-78.76933,Approximate (to the centisecond),Forest,forest,Restored,"23, 5 yr pasture",0.10,37.2,,,,
+44,SP6,SP6PA,Maquinpucuna,Districto Metropolitano de Quito, Ecuador,0.12017,-78.62583,Approximate (to the centisecond),"Pasture (Improved, 40 differant species were found. Native forest was burned)",grazing,Agriculture,50,0.10,39.2,,,,
+44,SP6,SP6aN,Maquinpucuna,Districto Metropolitano de Quito, Ecuador,0.12017,-78.62583,Approximate (to the centisecond),Forest,forest,Native,,0.10,39.0,,,,
+44,SP6,SP6bN,Maquinpucuna,Districto Metropolitano de Quito, Ecuador,0.12017,-78.62583,Approximate (to the centisecond),Forest,forest,Restored,"20, 30 yr pasture",0.10,36.3,,,,
+44,SP7,SP7PA,Pedro Viciente,Pichincha, Ecuador,0.09417,-79.02517,Approximate (to the centisecond),"Pasture (Improved, 40 differant species were found. Native forest was burned)",grazing,Agriculture,13,0.10,45.0,,,,
+44,SP7,SP7aN,Pedro Viciente,Pichincha, Ecuador,0.09417,-79.02517,Approximate (to the centisecond),Forest,forest,Native,,0.10,52.8,,,,
+44,SP7,SP7bN,Pedro Viciente,Pichincha, Ecuador,0.09417,-79.02517,Approximate (to the centisecond),Forest,forest,Restored,"15, 8 yr pasture",0.10,49.4,,,,
+44,SP8,SP8PA,Pitzara,Pichincha, Ecuador,0.27033,-79.16233,Approximate (to the centisecond),"Pasture (Improved, 40 differant species were found. Native forest was burned)",grazing,Agriculture,20,0.10,53.1,,,,
+44,SP8,SP8aN,Pitzara,Pichincha, Ecuador,0.27033,-79.16233,Approximate (to the centisecond),Forest,forest,Native,,0.10,62.3,,,,
+44,SP8,SP8bN,Pitzara,Pichincha, Ecuador,0.27033,-79.16233,Approximate (to the centisecond),Forest,forest,Restored,"10, 10 yr pasture",0.10,52.3,,,,
+49,SZ1,SZ1A,Grasslands Research Station- E,Marondera, Zimbabwe,-18.16667,31.50000,Approximate (to the min),Eucalyptus,plantation,Agriculture,47,0.50,14.5,39.4,,59.8,0.50
+49,SZ1,SZ1N,Grasslands Research Station- ME,Marondera, Zimbabwe,-18.16667,31.50000,Approximate (to the min),Miombo woodland,savanna,Native,,0.50,19.0,42.1,,59.9,0.50
+49,SZ2,SZ2A,Grasslands Research Station-P,Marondera, Zimbabwe,-18.16667,31.50000,Approximate (to the min),Pine,plantation,Agriculture,47,0.50,12.9,31.0,,45.3,0.50
+49,SZ2,SZ2N,Grasslands Research StationMP,Marondera, Zimbabwe,-18.16667,31.50000,Approximate (to the min),Miombo woodland,savanna,Native,,0.50,19.0,41.2,,56.8,0.50
+49,SZ3,SZ3A,Grasslands Research Station-G,Marondera, Zimbabwe,-18.16667,31.50000,Approximate (to the min),Pasture (Improved),grazing,Agriculture,63,0.50,16.8,38.9,,51.1,0.50
+49,SZ3,SZ3N,Grasslands Research Station-MG,Marondera, Zimbabwe,-18.16667,31.50000,Approximate (to the min),Miombo woodland,savanna,Native,,0.50,14.5,32.1,,45.0,0.50
+49,SZ4,SZ4A,Grasslands Research Station-A,Marondera, Zimbabwe,-18.16667,31.50000,Approximate (to the min),Maize,cropping,Agriculture,40,0.50,9.1,29.1,,44.7,0.50
+49,SZ4,SZ4N,Grasslands Research Station-MA,Marondera, Zimbabwe,-18.16667,31.50000,Approximate (to the min),Miombo woodland,savanna,Native,,0.50,21.1,41.5,,58.6,0.50
+31,TTH1,TTH1aA,University of Wyoming's Sustainable Agriculture Research and Extension Center (,Wyoming, USA,42.07234,-104.38579,Exact,Grass-Legume,grazing,Agriculture,7,1.20,4.9,14.6,31.4,,
+31,TTH1,TTH1bA,University of Wyoming's Sustainable Agriculture Research and Extension Center (,Wyoming, USA,42.07147,-104.39348,Exact,Wheat - no till,cropping,Agriculture,11,1.20,4.6,13.8,27.5,,
+31,TTH1,TTH1cA,University of Wyoming's Sustainable Agriculture Research and Extension Center (,Wyoming, USA,42.07119,-104.39465,Exact,Wheat - conventional,cropping,Agriculture,>60,1.20,3.3,9.9,25.4,,
+31,TTH1,TTH1dA,University of Wyoming's Sustainable Agriculture Research and Extension Center (,Wyoming, USA,42.06510,-104.39437,Exact,Wheat- fallow,cropping,Agriculture,>60,1.20,3.7,11.2,22.5,,
+31,TTH1,TTH1N,University of Wyoming's Sustainable Agriculture Research and Extension Center (,Wyoming, USA,42.07506,-104.39881,Exact,Prairie,grassland,Native,,1.20,10.4,31.1,55.5,,
+39,VM1,VM1aPA,Sao Paulo University,Sao Paulo, Brazil,-23.08669,-48.62636,Exact estimated,Pasture (improved),grazing,Agriculture,20,1.00,,50.8,93.1,,
+39,VM1,VM1bPA,Sao Paulo University,Sao Paulo, Brazil,-23.07294,-48.62798,Exact estimated,Pasture (improved),grazing,Agriculture,80,1.00,,45.0,89.3,,
+39,VM1,VM1A,Sao Paulo University,Sao Paulo, Brazil,-23.03817,-48.63957,Exact estimated,Eucalyptus,plantation,Agriculture,72,1.00,,35.0,82.2,,
+39,VM1,VM1N,Sao Paulo University,Sao Paulo, Brazil,-23.06214,-48.62602,Exact estimated,Cerrado,savanna,Native,,1.00,,32.8,75.6,,
+34,YL1,YL1aA,Saoshe Village,Zhejiang Province, China,30.91667,119.90000,Approximate (to the min),Chinese chestnut,plantation,Agriculture,5,0.20,16.7,,,33.3,0.20
+34,YL1,YL1bA,Saoshe Village,Zhejiang Province, China,30.91667,119.90000,Approximate (to the min),Chinese chestnut,plantation,Agriculture,10,0.20,15.0,,,30.0,0.20
+34,YL1,LY1cA,Saoshe Village,Zhejiang Province, China,30.91667,119.90000,Approximate (to the min),Chinese chestnut,plantation,Agriculture,20,0.20,14.3,,,29.0,0.20
+34,YL1,YL1N,Saoshe Village,Zhejiang Province, China,30.91667,119.90000,Approximate (to the min),"Loropetalum chinense, Vaccinium bracteatum, Camellia fraterna,and Rhododendron ovatum",forest,Native,,0.20,18.2,,,36.4,0.20
+30,YY1,YY1aA,Technology Science and Education Base for Soil and Water Conservation ,Fujian Province, China,27.01667,118.11667,Approximate (to the min),Schima superba - Timber Plantation,cropping,Agriculture,,1.00,18.7,49.2,101.4,,
+30,YY1,YY1bA,Technology Science and Education Base for Soil and Water Conservation ,Fujian Province, China,27.01667,118.11667,Approximate (to the min),Chinese fir - Timber Plantation,cropping,Agriculture,,1.00,17.7,47.9,104.0,,
+30,YY1,YY1cA,Technology Science and Education Base for Soil and Water Conservation ,Fujian Province, China,27.01667,118.11667,Approximate (to the min),Castanea henryi,cropping,Agriculture,,1.00,16.6,45.5,105.7,,
+30,YY1,YY1dA,Technology Science and Education Base for Soil and Water Conservation ,Fujian Province, China,27.01667,118.11667,Approximate (to the min),Orchard,cropping,Agriculture,,1.00,13.7,39.8,96.9,,
+30,YY1,YY1eA,Technology Science and Education Base for Soil and Water Conservation ,Fujian Province, China,27.01667,118.11667,Approximate (to the min),Sweet Potatoes,cropping,Agriculture,,1.00,8.6,24.3,69.4,,
+30,YY1,YY1aN,Wanmulin Nature Reserve,Fujian Province, China,27.05000,118.15000,Approximate (to the min),Forest - Altingia gralilipes,forest,Native,,1.00,34.1,80.8,142.2,,
+30,YY1,YY1bN,Technology Science and Education Base for Soil and Water Conservation ,Fujian Province, China,27.01667,118.11667,Approximate (to the min),Secondary Forest,forest,Restored,"Deforested in 1986, reforested in 1987",1.00,16.8,42.5,88.0,,
+2,ZS1,ZS1A,Headwater area of the Heihe River of Qilian Mountain,Gansu Province, China,38.71667,99.81667,Approximate ( to the min),"oats (Avena stiva), spring wheat (Triticum aestivum), barley (Hordeum vulgare), cole (Brassica campestris), and vegetable pea",cropping,Agriculture,20,0.30,38.4,113.0,,113.0,0.30
+2,ZS1,ZS1N,Headwater area of the Heihe River of Qilian Mountain,Gansu Province, China,38.71667,99.81667,Approximate ( to the min),subalpine meadow,grassland,Native,,0.30,61.6,169.0,,168.9,0.30
+,,,,,,,,,,,,,,,,,,
